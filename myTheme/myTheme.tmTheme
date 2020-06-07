@@ -282,12 +282,8 @@
 			<string>invalid</string>
 			<key>settings</key>
 			<dict>
-				<key>background</key>
-				<string>#dd427a</string>
-				<key>fontStyle</key>
-				<string />
 				<key>foreground</key>
-				<string>#E74C3C</string>
+				<string>#ff0000</string>
 			</dict>
 		</dict>
 		<dict>
