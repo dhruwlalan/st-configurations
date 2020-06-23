@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+@include typo( ${1} , ${2} , ${3} , ${4} );${5}
+]]></content>
+	<tabTrigger>typo</tabTrigger>
+</snippet>

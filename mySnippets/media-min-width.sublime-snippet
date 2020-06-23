@@ -1,0 +1,11 @@
+<snippet>
+
+	<content><![CDATA[
+@media (min-width: ${1}) {
+	${2}
+}
+]]></content>
+
+	<tabTrigger>minw</tabTrigger>
+	
+</snippet>
