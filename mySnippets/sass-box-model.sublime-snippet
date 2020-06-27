@@ -1,0 +1,7 @@
+
+<snippet>
+	<content><![CDATA[
+@include boxm( ${1:auto} , ${2:auto} , ${3:0} , ${4:0} );$5
+]]></content>
+	<tabTrigger>boxm</tabTrigger>
+</snippet>

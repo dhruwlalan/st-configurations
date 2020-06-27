@@ -1,0 +1,9 @@
+{
+
+    "cmd": ["sass", "--update", "$file:${file_path}/../css/style.css", "--stop-on-error", "--no-cache"],
+
+    "windows":
+    {
+        "shell": "C://program Files//Git//git-bash.exe"
+    }
+}
