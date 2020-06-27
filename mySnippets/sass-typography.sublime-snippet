@@ -1,6 +1,7 @@
+
 <snippet>
 	<content><![CDATA[
-@include typo( ${1} , ${2} , ${3} , ${4} );${5}
+@include typo( /*c*/ ${1:null} , /*ff*/ ${2:null} , /*fw*/ ${3:null} , /*fs*/ ${4:null} );${5}
 ]]></content>
 	<tabTrigger>typo</tabTrigger>
 </snippet>

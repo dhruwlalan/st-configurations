@@ -1,7 +1,7 @@
 
 <snippet>
 	<content><![CDATA[
-@include pos-absolute( ${1:auto} , ${2:auto} , ${3:auto} , ${4:auto} );$5
+@include pos-absolute( /*t*/ ${1:null} , /*b*/ ${2:null} , /*l*/ ${3:null} , /*r*/ ${4:null} );$5
 ]]></content>
 	<tabTrigger>abs</tabTrigger>
 </snippet>
