@@ -7,7 +7,9 @@
     { "keys": ["ctrl+backspace"], "command": "toggle_side_bar" },
     { 
         "keys": ["ctrl+alt+t"], "command": "terminus_open", "args": {
+            "cmd": "C://Windows//System32//cmd.exe",
             "cwd": "${file_path:${folder}}"
         }
-    }
+    },
+    { "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" }
 ]
