@@ -1,7 +1,0 @@
-
-<snippet>
-	<content><![CDATA[
-@include box( /*p*/ ${1:null} , /*b*/ ${2:null} , /*m*/ ${3:null} );$4
-]]></content>
-	<tabTrigger>box</tabTrigger>
-</snippet>
