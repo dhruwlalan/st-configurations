@@ -1,7 +1,0 @@
-
-<snippet>
-	<content><![CDATA[
-@include pos-fixed( /*t*/ ${1:null} , /*b*/ ${2:null} , /*l*/ ${3:null} , /*r*/ ${4:null} );$5
-]]></content>
-	<tabTrigger>fix</tabTrigger>
-</snippet>

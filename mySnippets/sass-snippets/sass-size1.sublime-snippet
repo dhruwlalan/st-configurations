@@ -1,0 +1,7 @@
+
+<snippet>
+	<content><![CDATA[
+@include box( \$$1: ${2:null} $3);$4
+]]></content>
+	<tabTrigger>size1</tabTrigger>
+</snippet>

@@ -1,7 +1,0 @@
-
-<snippet>
-	<content><![CDATA[
-@include typo( /*c*/ ${1:null} , /*ff*/ ${2:null} , /*fw*/ ${3:null} , /*fs*/ ${4:null} );${5}
-]]></content>
-	<tabTrigger>typo</tabTrigger>
-</snippet>

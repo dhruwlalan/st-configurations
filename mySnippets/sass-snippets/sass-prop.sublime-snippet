@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+, \$$1: ${2:null} 
+]]></content>
+	<tabTrigger>prop</tabTrigger>
+</snippet>

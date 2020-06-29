@@ -1,7 +1,0 @@
-
-<snippet>
-	<content><![CDATA[
-@include max-size( /*h*/ ${1:null} , /*w*/ ${2:null} );$4
-]]></content>
-	<tabTrigger>maxsize</tabTrigger>
-</snippet>
