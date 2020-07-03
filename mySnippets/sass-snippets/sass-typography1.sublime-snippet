@@ -1,0 +1,7 @@
+
+<snippet>
+	<content><![CDATA[
+@include typo( \$$1: ${2:null} $5);$6
+]]></content>
+	<tabTrigger>typo1</tabTrigger>
+</snippet>
