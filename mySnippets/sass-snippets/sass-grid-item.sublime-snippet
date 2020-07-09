@@ -1,0 +1,10 @@
+
+<snippet>
+	<content><![CDATA[
+@include grid-item( 
+	\$col:	${1:null} ,
+	\$row:	${2:null}
+);$3
+]]></content>
+	<tabTrigger>gri</tabTrigger>
+</snippet>

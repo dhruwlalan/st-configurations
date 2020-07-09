@@ -1,0 +1,11 @@
+
+<snippet>
+	<content><![CDATA[
+@include grid( 
+	\$cols:	null ,
+	\$rows:	null ,
+	\$gap:	null
+);
+]]></content>
+	<tabTrigger>grid</tabTrigger>
+</snippet>
