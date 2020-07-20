@@ -1,0 +1,59 @@
+{
+	"color_scheme": "Packages/User/myColorScheme/myCS-default.tmTheme",
+	"draw_indent_guides": false,
+	"draw_white_space": "none",
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace",
+		"*.sublime-project"
+	],
+	"font_face": "lucida console",
+	"font_size": 15,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal"
+	],
+	"index_files": false,
+	"line_padding_bottom": 5,
+	"line_padding_top": 5,
+	"material_theme_accent_cyan": true,
+	"material_theme_accent_scrollbars": true,
+	"material_theme_big_fileicons": true,
+	"material_theme_bold_tab": true,
+	"material_theme_compact_sidebar": true,
+	"material_theme_contrast_mode": true,
+	"material_theme_small_tab": true,
+	"material_theme_tabs_separator": true,
+	"mini_diff": false,
+	"overlay_scroll_bars": "enabled",
+	"save_on_focus_lost": true,
+	"show_definitions": false,
+	"show_errors_inline": false,
+	"theme": "Material-Theme-Darker.sublime-theme",
+	"ui_scale": 1.0,
+	"word_wrap": false
+}

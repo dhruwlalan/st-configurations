@@ -1,0 +1,25 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"auto-save",
+		"AutoFoldCode",
+		"Bootstrap 4 Autocomplete",
+		"ColorHints",
+		"ColorSchemeEditor",
+		"Emmet",
+		"Material Theme",
+		"Package Control",
+		"PackageResourceViewer",
+		"SCSS",
+		"SideBarEnhancements",
+		"SQLTools",
+		"Syntax Highlighting for Sass",
+		"Terminal",
+		"Terminus"
+	]
+}
