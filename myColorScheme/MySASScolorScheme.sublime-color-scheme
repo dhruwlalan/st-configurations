@@ -1,0 +1,208 @@
+
+{
+    "name": "My SASS Color Scheme",
+    "author": "dhruw lalan",
+    "variables":
+    {
+        "white":                "snow",
+        "tagSelector":          "deeppink",
+        "classSelector":        "deepskyblue",
+        "idSelector":           "violet",
+        "string":               "springgreen",
+        "reserved":             "#9F9C42",
+        "propertyName":         "mediumspringgreen",
+        "propertyValue":        "#FFF969",
+        "function":             "lightsalmon",
+        "functionParameter":    "cyan",
+        "media":                "deeppink"
+    },
+    "globals":
+    {
+        //  EDITOR                  
+            "background": "#191919",
+            "foreground": "white",
+            "caret": "white",
+            "invisibles": "white",
+            "line_highlight": "#212121",
+        //  ACCENTS                 
+            "fold_marker": "yellow",
+            "minimap_border": "cyan",
+            "accent": "cyan",
+        //  GUTTER                  
+            "gutter": "#191919",
+            "gutter_foreground": "#00c9c9",
+        //  SELECTION               
+            "selection": "#202020",
+            "inactive_selection": "#222222",
+            "selection_border": "#00bbff",
+            "selection_corner_style":"cut",
+        //  GUIDES                  
+            "guide": "#6F6F6F",
+            "active_guide": "cyan",
+            "stack_guide": "#06FF05",
+        //  FIND                    
+            "find_highlight_foreground": "black",
+            "find_highlight": "white",
+        //  BRACKETS                
+            "brackets_options":"foreground",
+            "brackets_foreground":"yellow",
+            "bracket_contents_options":"foreground",
+            "bracket_contents_foreground":"yellow",
+    },
+    "rules":
+    [
+        //  INVALID                 
+            {
+                "name": "Invalid",
+                "scope": "invalid",
+                "foreground": "#FFFFFF",
+                "background": "#FF1E00"
+            },
+        //  COMMENTS                
+            {
+                "name": "Comments",
+                "scope": "comment.line.sass, comment.block.css.sass",
+                "foreground": "#808080",
+                "font_style": ""
+            },
+        //  SELECTOR                
+            /* tag selector */
+            {
+                "name": "Tag Selector",
+                "scope": "entity.name.tag.css.sass",
+                "foreground": "var(tagSelector)",
+                "font_style": "bold"
+            },
+            /* class selector */
+            {
+                "name": "Class Selector",
+                "scope": "entity.other.attribute-name.class.css.sass",
+                "foreground": "var(classSelector)",
+                "font_style": "bold"
+            },
+            /* id selector */
+            {
+                "name": "ID Selector",
+                "scope": "entity.other.attribute-name.id.css.sass",
+                "foreground": "var(idSelector)",
+                "font_style": "bold"
+            },
+            /* root selector */
+            {
+                "name": "Root Selector",
+                "scope": "keyword.operator.css.sass",
+                "foreground": "var(tagSelector)",
+                "font_style": "bold"
+            },
+            /* psudo element */
+            {
+                "name": "Psudo Element",
+                "scope": "entity.other.pseudo-element.css.sass",
+                "foreground": "var(white)",
+                "font_style": "bold"
+            },
+            /* psudo class */
+            {
+                "name": "Psudo Class",
+                "scope": "entity.other.pseudo-class.css.sass",
+                "foreground": "var(white)",
+                "font_style": "bold"
+            },
+            /* parent selector */
+            {
+                "name": "Parent Selector",
+                "scope": "keyword.other.parent-selector.sass",
+                "foreground": "var(tagSelector)",
+                "font_style": "bold"
+            },
+        //  NUMBERS                 
+            {
+                "name": "Numbers",
+                "scope": "constant.numeric.css.sass",
+                "foreground": "var(white)",
+                "font_style": ""
+            },
+        //  CONSTANTS               
+            /* units */
+            {
+                "name": "Units",
+                "scope": "keyword.other.unit.css.sass",
+                "foreground": "var(tagSelector)",
+                "font_style": "bold"
+            },
+            /* constants */
+            {
+                "name": "Color Constants",
+                "scope": "constant.other.color.rgb-value.css.sass",
+                "foreground": "var(white)",
+                "font_style": ""
+            },
+            /* reserved */
+            {
+                "name": "Reserved Words",
+                "scope": "keyword.other.reserved.sass",
+                "foreground": "var(reserved)",
+                "font_style": "bold"
+            },
+        //  STRINGS                 
+            {
+                "name": "Strings",
+                "scope": "string",
+                "foreground": "var(string)",
+                "font_style": ""
+            },    
+        //  PROPERTIES              
+            /* property name */
+            {
+                "name": "Property Name",
+                "scope": "support.type.property-name.css.sass",
+                "foreground": "var(propertyName)",
+                "font_style": ""
+            },
+            /* property value */
+            {
+                "name": "Property Value",
+                "scope": "support.constant.property-value.css.sass",
+                "foreground": "var(propertyValue)",
+                "font_style": ""
+            },
+        //  FUNCTIONS               
+            /* support functions */
+            {
+                "name": "Support Functions",
+                "scope": "support.function.sass",
+                "foreground": "var(function)",
+                "font_style": "bold"
+            },
+            /* mixin functions */
+            {
+                "name": "Mixin Functions",
+                "scope": "entity.name.function.sass",
+                "foreground": "springgreen",
+                "font_style": "bold"
+            },
+            /* support functions parameter */
+            {
+                "name": "Support Functions Parameter",
+                "scope": "variable.parameter.sass",
+                "foreground": "var(functionParameter)",
+                "font_style": "bold"
+            },
+        //  @RULE                   
+            {
+                "name": "@media",
+                "scope": "keyword.control.at-rule.css.sass",
+                "foreground": "var(media)",
+                "font_style": "bold"
+            },
+        
+        //  CATAGORY
+            /* new */ 
+            {
+                "name": "name",
+                "scope": "scope",
+                "foreground": "red",
+                "font_style": ""
+            },
+    ]
+}
