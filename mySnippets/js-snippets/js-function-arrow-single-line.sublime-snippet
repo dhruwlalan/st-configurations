@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+const ${1:name} = ($2) => $3;
+]]></content>
+	<tabTrigger>afsl</tabTrigger>
+	<scope>source.js</scope>
+	<description>arr func sl</description>
+</snippet>
