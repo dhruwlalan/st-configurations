@@ -1,6 +1,8 @@
 {
-	"color_scheme": "Packages/User/myColorScheme/myCS-default.tmTheme",
+	"color_scheme": "Packages/User/myColorScheme/Default.tmTheme",
+	"drag_text": false,
 	"draw_indent_guides": false,
+	"draw_minimap_border": true,
 	"draw_white_space": "none",
 	"file_exclude_patterns":
 	[
@@ -26,8 +28,8 @@
 		"*.sublime-workspace",
 		"*.sublime-project"
 	],
-	"font_face": "lucida console",
-	"font_size": 15,
+	"font_face": "Fira Mono",
+	"font_size": 17,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -38,8 +40,10 @@
 		"draw_normal"
 	],
 	"index_files": false,
-	"line_padding_bottom": 5,
-	"line_padding_top": 5,
+	"line_padding_bottom": 6,
+	"line_padding_top": 6,
+	"margin": 10,
+	"match_brackets_square": false,
 	"material_theme_accent_cyan": true,
 	"material_theme_accent_scrollbars": true,
 	"material_theme_big_fileicons": true,
@@ -53,6 +57,7 @@
 	"save_on_focus_lost": true,
 	"show_definitions": false,
 	"show_errors_inline": false,
+	"tab_completion": false,
 	"theme": "Material-Theme-Darker.sublime-theme",
 	"ui_scale": 1.0,
 	"word_wrap": false
