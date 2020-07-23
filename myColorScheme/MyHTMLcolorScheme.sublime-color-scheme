@@ -1,0 +1,185 @@
+
+{
+    "name": "My HTML Color Scheme",
+    "author": "dhruw lalan",
+    "variables":
+    {
+        "white":            "snow",
+        "string":           "mediumspringgreen",
+        "constant":         "orange",
+        "constantBg":       "rgba(124, 124, 124, 0.2)",
+        "tag":              "deeppink",
+        "attribute":        "cyan",
+        "function":         "violet",
+    },
+    "globals":
+    {
+        //  EDITOR                  
+            "background": "#191919",
+            "foreground": "white",
+            "caret": "white",
+            "invisibles": "white",
+            "line_highlight": "#212121",
+        //  ACCENTS                 
+            "fold_marker": "yellow",
+            "minimap_border": "cyan",
+            "accent": "cyan",
+        //  GUTTER                  
+            "gutter": "#191919",
+            "gutter_foreground": "#00c9c9",
+        //  SELECTION               
+            "selection": "#202020",
+            "inactive_selection": "#222222",
+            "selection_border": "#00bbff",
+            "selection_corner_style":"cut",
+        //  GUIDES                  
+            "guide": "#6F6F6F",
+            "active_guide": "cyan",
+            "stack_guide": "#06FF05",
+        //  FIND                    
+            "find_highlight_foreground": "black",
+            "find_highlight": "white",
+        //  BRACKETS                
+            "brackets_options":"foreground",
+            "brackets_foreground":"yellow",
+            "bracket_contents_options":"foreground",
+            "bracket_contents_foreground":"yellow",
+    },
+    "rules":
+    [
+        //  INVALID                 
+            {
+                "name": "Invalid",
+                "scope": "invalid",
+                "foreground": "#FFFFFF",
+                "background": "#FF1E00"
+            },
+        //  COMMENTS                
+            {
+                "name": "Comment",
+                "scope": "comment.block.html",
+                "foreground": "#808080",
+                "font_style": "italic"
+            },
+        //  DOCTYPE                 
+            /* doctype decleration */ 
+            {
+                "name": "Doctype",
+                "scope": "keyword.declaration.doctype.html",
+                "foreground": "var(tag)",
+                "font_style": "bold"
+            },
+            /* doctype html */ 
+            {
+                "name": "Doctype html",
+                "scope": "constant.language.doctype.html",
+                "foreground": "var(constant)",
+                "font_style": "bold"
+            },
+            /* doctype tag start */ 
+            {
+                "name": "Doctype Tag Start",
+                "scope": "meta.tag.sgml.doctype.html punctuation.definition.tag.begin.html",
+                "foreground": "var(white)",
+                "font_style": "bold"
+            },
+            /* doctype tag end */ 
+            {
+                "name": "Doctype Tag End",
+                "scope": "meta.tag.sgml.doctype.html punctuation.definition.tag.end.html",
+                "foreground": "var(white)",
+                "font_style": "bold"
+            },
+        //  STRINGS                 
+            {
+                "name": "Strings",
+                "scope": "string",
+                "foreground": "var(string)",
+                "font_style": ""
+            },
+        //  TAGS                    
+            /* main tags */
+            {
+                "name": "Main Tags",
+                "scope": "entity.name.tag.structure.any.html",
+                "foreground": "var(tag)",
+                "font_style": "bold"
+            },
+            /* main tags start */
+            {
+                "name": "Main Tags Start",
+                "scope": "meta.tag.structure.any.html punctuation.definition.tag.begin.html",
+                "foreground": "var(white)",
+                "font_style": "bold"
+            },
+            /* main tags end */
+            {
+                "name": "Main Tags End",
+                "scope": "meta.tag.structure.any.html punctuation.definition.tag.end.html",
+                "foreground": "var(white)",
+                "font_style": "bold"
+            },
+            /* sub tags */
+            {
+                "name": "Sub Tags",
+                "scope": "entity.name.tag",
+                "foreground": "var(tag)",
+                "font_style": ""
+            },
+        //  ATTRIBUTE               
+            /* attribute with value */
+            {
+                "name": "Attribute With Value",
+                "scope": "meta.attribute-with-value",
+                "foreground": "var(attribute)",
+                "font_style": ""
+            },
+            /* attribute key value separator */
+            {
+                "name": "Attribute Key Value Separater",
+                "scope": "punctuation.separator.key-value.html",
+                "foreground": "var(white)",
+                "font_style": ""
+            },
+            /* attribute with event*/
+            {
+                "name": "Attribute with event",
+                "scope": "entity.other.attribute-name.event.html",
+                "foreground": "var(attribute)",
+                "font_style": ""
+            },
+        //  FUNCTION                
+            /* function*/
+            {
+                "name": "function",
+                "scope": "meta.function-call.js variable.function.js",
+                "foreground": "var(function)",
+                "font_style": "bold"
+            },
+            /* function call*/
+            {
+                "name": "function call",
+                "scope": "meta.group.js",
+                "foreground": "var(white)",
+                "font_style": ""
+            },
+        //  CONSTANTS               
+            {
+                "name": "Constant Content",
+                "scope": "constant.character.entity.named.html",
+                "foreground": "var(constant)",
+                "background": "var(constantBg)",
+                "font_style": "bold"
+            },
+
+
+        //  CATAGORY                
+            /* new */
+            {
+                "name": "name",
+                "scope": "scope",
+                "foreground": "red",
+                "font_style": ""
+            },
+    ]
+}
