@@ -1,0 +1,153 @@
+{
+    "name": "My Default Color Scheme",
+    "author": "Dhruw",
+    "globals":
+    {
+        //  EDITOR                  
+            "background": "#191919",
+            "foreground": "white",
+            "caret": "white",
+            "invisibles": "white",
+            "line_highlight": "#212121",
+        //  ACCENTS                 
+            "fold_marker": "yellow",
+            "minimap_border": "cyan",
+            "accent": "cyan",
+        //  GUTTER                  
+            "gutter": "#191919",
+            "gutter_foreground": "#00c9c9",
+        //  SELECTION               
+            "selection": "#202020",
+            "inactive_selection": "#222222",
+            "selection_border": "#00bbff",
+            "selection_corner_style":"cut",
+        //  GUIDES                  
+            "guide": "#6F6F6F",
+            "active_guide": "cyan",
+            "stack_guide": "#06FF05",
+        //  FIND                    
+            "find_highlight_foreground": "black",
+            "find_highlight": "white",
+        //  BRACKETS                
+            "brackets_options":"foreground",
+            "brackets_foreground":"yellow",
+            "bracket_contents_options":"foreground",
+            "bracket_contents_foreground":"yellow",
+    },
+    "rules":
+    [
+        {
+            "name": "Comment",
+            "scope": "comment",
+            "foreground": "#808080",
+            "background": "#222222"
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "foreground": "#4dff8e"
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "foreground": "#fff2fe"
+        },
+        {
+            "name": "Built-in constant",
+            "scope": "constant.language",
+            "foreground": "#5a60ff"
+        },
+        {
+            "name": "User-defined constant",
+            "scope": "constant.character, constant.other",
+            "foreground": "#5a60ff"
+        },
+        {
+            "name": "Variable",
+            "scope": "variable",
+            "font_style": "italic"
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword",
+            "foreground": "#FF268F",
+            "font_style": "bold"
+        },
+        {
+            "name": "Storage",
+            "scope": "storage",
+            "foreground": "#00FFFF",
+            "font_style": "italic"
+        },
+        {
+            "name": "Storage type",
+            "scope": "storage.type",
+            "foreground": "#FF1493",
+            "font_style": "bold"
+        },
+        {
+            "name": "Class name",
+            "scope": "entity.name.class",
+            "foreground": "#ba36e2",
+            "font_style": "underline"
+        },
+        {
+            "name": "Inherited class",
+            "scope": "entity.other.inherited-class",
+            "foreground": "#ba36e2",
+            "font_style": "italic underline"
+        },
+        {
+            "name": "Function name",
+            "scope": "entity.name.function",
+            "foreground": "#00FF7F"
+        },
+        {
+            "name": "Function argument",
+            "scope": "variable.parameter",
+            "foreground": "#f5ffab",
+            "font_style": "bold"
+        },
+        {
+            "name": "Tag name",
+            "scope": "entity.name.tag",
+            "foreground": "#FF268F"
+        },
+        {
+            "name": "Tag attribute",
+            "scope": "entity.other.attribute-name",
+            "foreground": "#2BB5FF"
+        },
+        {
+            "name": "Library function",
+            "scope": "support.function",
+            "foreground": "#fff969"
+        },
+        {
+            "name": "Library constant",
+            "scope": "support.constant",
+            "foreground": "#fff969"
+        },
+        {
+            "name": "Library class/type",
+            "scope": "support.type, support.class",
+            "foreground": "#6bffa1"
+        },
+        {
+            "name": "Library variable",
+            "scope": "support.other.variable",
+            "foreground": "#E74C3C"
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "foreground": "#ff0000"
+        },
+        {
+            "name": "Invalid deprecated",
+            "scope": "invalid.deprecated",
+            "foreground": "#E74C3C",
+            "background": "#b291ef"
+        }
+    ]
+}
