@@ -1,0 +1,331 @@
+
+{
+    "name": "My JS Color Scheme",
+    "author": "dhruw lalan",
+    "variables":
+    {
+        "white":            "snow",
+        "operatorLight":    "palegoldenrod",
+        "operatorMedium":   "khaki",
+        "operatorDark":     "yellow",
+        "keyword":          "deeppink",
+        "string":           "springgreen",
+        "tsexpressionb":    "rgba(124, 124, 124, 0.2)",
+        "tsexpressionf":    "darkgray",
+        "constant":         "violet",
+        "function":         "cyan",
+        "functionIO":       "orange",
+        "objectProperty":   "#ff9999",
+        "domObject":        "mediumspringgreen"
+    },
+    "globals":
+    {
+        //  EDITOR                  
+            "background": "#191919",
+            "foreground": "white",
+            "caret": "white",
+            "invisibles": "white",
+            "line_highlight": "#212121",
+        //  ACCENTS                 
+            "fold_marker": "yellow",
+            "minimap_border": "cyan",
+            "accent": "cyan",
+        //  GUTTER                  
+            "gutter": "#191919",
+            "gutter_foreground": "#00c9c9",
+        //  SELECTION               
+            "selection": "#202020",
+            "inactive_selection": "#222222",
+            "selection_border": "#00bbff",
+            "selection_corner_style":"cut",
+        //  GUIDES                  
+            "guide": "#6F6F6F",
+            "active_guide": "cyan",
+            "stack_guide": "#06FF05",
+        //  FIND                    
+            "find_highlight_foreground": "black",
+            "find_highlight": "white",
+        //  BRACKETS                
+            "brackets_options":"foreground",
+            "brackets_foreground":"yellow",
+            "bracket_contents_options":"foreground",
+            "bracket_contents_foreground":"yellow",
+    },
+    "rules":
+    [
+        //  INVALID                 
+            {
+                "name": "Invalid",
+                "scope": "invalid",
+                "foreground": "#FFFFFF",
+                "background": "#FF1E00"
+            },
+        //  COMMENTS                
+            /* single line comment content */
+            {
+                "name": "Comment Slash",
+                "scope": "comment.line.double-slash.js",
+                "foreground": "#808080",
+                "font_style": "italic"
+            },
+            /* single line comment double slash */
+            {
+                "name": "Comment",
+                "scope": "punctuation.definition.comment.js",
+                "foreground": "#808080",
+                "font_style": ""
+            },
+            /* multi line comment */
+            {
+                "name": "Comment Block",
+                "scope": "comment.block.js",
+                "foreground": "#808080",
+                "font_style": "bold"
+            },
+        //  VARIABLES               
+            /* variable keyword */
+            {
+                "name": "Variable Keyword",
+                "scope": "storage.type.js",
+                "foreground": "var(keyword)",
+                "font_style": "bold"
+            },
+            /* variable identifier */
+            {
+                "name": "Variable Identifier",
+                "scope": "variable.other.readwrite.js",
+                "foreground": "var(white)",
+                "font_style": ""
+            },
+        //  STRINGS                 
+            /* strings */
+            {
+                "name": "Strings",
+                "scope": "string",
+                "foreground": "var(string)",
+                "font_style": ""
+            },
+            /* strings quote start */
+            {
+                "name": "Strings Quote Start",
+                "scope": "punctuation.definition.string.begin.js",
+                "foreground": "var(string)",
+                "font_style": "bold"
+            },
+            /* strings quote end*/
+            {
+                "name": "Strings Quote End",
+                "scope": "punctuation.definition.string.end.js",
+                "foreground": "var(string)",
+                "font_style": "bold"
+            },
+            /* template string expression */
+            {
+                "name": "Template String expression",
+                "scope": "meta.template.expression.js",
+                "background": "var(tsexpressionb)",
+                "foreground": "var(tsexpressionf)",
+                "font_style": "bold"
+            },
+        //  CONSTANTS               
+            /* constants */
+            {
+                "name": "Constants",
+                "scope": "constant",
+                "foreground": "var(constant)",
+                "font_style": "bold"
+            },
+            /* constants numeric */
+            {
+                "name": "Constants",
+                "scope": "constant.numeric",
+                "foreground": "var(constant)",
+                "font_style": ""
+            },
+            /* constant boolean */
+            {
+                "name": "Constants Booleans",
+                "scope": "constant.language.boolean.true.js",
+                "foreground": "var(constant)",
+                "font_style": "bold"
+            },         
+        //  OPERATORS               
+            /* comma */
+            {
+                "name": "Comma",
+                "scope": "punctuation.separator.comma.js",
+                "foreground": "var(white)",
+                "font_style": ""
+            },
+            /* assignment */
+            {
+                "name": "Asignment Operator",
+                "scope": "keyword.operator.assignment.js",
+                "foreground": "var(operatorLight)",
+                "font_style": "bold"
+            },
+             /* arithmetic */
+            {
+                "name": "Arithmetic Operator",
+                "scope": "keyword.operator.arithmetic.js",
+                "foreground": "var(operatorMedium)",
+                "font_style": "bold"
+            },
+            /* comparision */
+            {
+                "name": "Comparision Operator",
+                "scope": "keyword.operator.comparison.js",
+                "foreground": "var(operatorMedium)",
+                "font_style": "bold"
+            },
+            /* relational */
+            {
+                "name": "Relational Operator",
+                "scope": "keyword.operator.relational.js",
+                "foreground": "var(operatorMedium)",
+                "font_style": "bold"
+            },
+            /* logical */
+            {
+                "name": "Logical Operator",
+                "scope": "keyword.operator.logical.js",
+                "foreground": "var(operatorDark)",
+                "font_style": "bold"
+            },
+        //  STATEMENT TERMINATOR    
+            {
+                "name": "Statement Terminator",
+                "scope": "punctuation.terminator.statement.js",
+                "foreground": "var(white)",
+                "font_style": ""
+            },
+        //  IF ELSE                 
+            {
+                "name": "Conditional Keywords",
+                "scope": "keyword.control.conditional.js",
+                "foreground": "var(keyword)",
+                "font_style": "bold"
+            },
+        //  SWITCH                  
+            {
+                "name": "Switch Keyword",
+                "scope": "keyword.control.switch.js",
+                "foreground": "var(keyword)",
+                "font_style": "bold"
+            },
+        //  LOOPS                   
+            {
+                "name": "Loops",
+                "scope": "keyword.control.loop.js",
+                "foreground": "var(keyword)",
+                "font_style": "bold"
+            },
+        //  FUNCTIONS & METHODS     
+            /* function keyword */
+            {
+                "name": "Function Keyword",
+                "scope": "storage.type.function.js",
+                "foreground": "var(keyword)",
+                "font_style": "bold"
+            },
+            /* functions*/
+            {
+                "name": "Function Decleration",
+                "scope": "entity.name.function.js",
+                "foreground": "var(function)",
+                "font_style": ""
+            },
+            /* built-in functions */
+            {
+                "name": "Built-in Functions",
+                "scope": "support.function.js",
+                "foreground": "var(function)",
+                "font_style": ""
+            },
+            /* function call */
+            {
+                "name": "function call",
+                "scope": "meta.function-call.js variable.function.js",
+                "font_style": "italic"
+            },
+            {
+                "name": "Methods",
+                "scope": "variable.function.js",
+                "foreground": "var(function)",
+                "font_style": ""
+            },
+            /* support methods */
+            {
+                "name": "Methods",
+                "scope": "support.function.console.js",
+                "foreground": "var(function)",
+                "font_style": ""
+            },
+            /* function input */
+            {
+                "name": "Function Parameters",
+                "scope": "variable.parameter.function.js",
+                "foreground": "var(functionIO)",
+                "font_style": "bold"
+            },
+            /* function output */
+            {
+                "name": "Return Statement",
+                "scope": "keyword.control.flow.js",
+                "foreground": "var(functionIO)",
+                "font_style": "bold"
+            },
+            /* function parameter seperator */
+            {
+                "name": "Parameter Seperator",
+                "scope": "punctuation.separator.parameter.function.js",
+                "foreground": "var(operator)",
+                "font_style": ""
+            },
+        //  OBJECTS                 
+            /* object properties */
+            {
+                "name": "Object Properties",
+                "scope": "meta.object-literal.key.js",
+                "foreground": "var(objectProperty)",
+                "font_style": "bold"
+            },
+            /* object properties used */
+            {
+                "name": "Object Properties Used",
+                "scope": "meta.property.object.js",
+                "foreground": "var(objectProperty)",
+                "font_style": "italic bold"
+            },
+            /* key value separator */
+            {
+                "name": "Key Value Separator",
+                "scope": "punctuation.separator.key-value.js",
+                "foreground": "var(operator1)",
+                "font_style": ""
+            },
+            /* dom object document */
+            {
+                "name": "DOM Object document",
+                "scope": "support.type.object.dom.js",
+                "foreground": "var(domObject)",
+                "font_style": "italic bold"
+            },
+            /* dom object console */
+            {
+                "name": "DOM Object console",
+                "scope": "support.type.object.console.js",
+                "foreground": "var(domObject)",
+                "font_style": "bold italic"
+            },
+            
+
+            /* new */ 
+            {
+                "name": "name",
+                "scope": "scope",
+                "foreground": "red",
+                "font_style": ""
+            },
+    ]
+}
