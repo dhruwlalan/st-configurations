@@ -2,10 +2,12 @@
 <snippet>
 	<content><![CDATA[
 @include grid( 
-	\$cols:	null ,
-	\$rows:	null ,
-	\$gap:	null
-);
+	\$cols:	${1:null} ,
+	\$rows:	${2:null} ,
+	\$gap:	${3:null}
+);$0
 ]]></content>
 	<tabTrigger>grid</tabTrigger>
+	<scope>source.scss</scope>
+	<description>grid</description>
 </snippet>

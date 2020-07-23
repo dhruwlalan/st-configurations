@@ -1,7 +1,9 @@
 
 <snippet>
 	<content><![CDATA[
-@include box( \$p: ${1:null} , \$b: ${2:null} , \$m: ${3:null} $4);$5
+@include box( \$p: ${1:null} , \$b: ${2:null} , \$m: ${3:null} $4);$0
 ]]></content>
 	<tabTrigger>pbm</tabTrigger>
+	<scope>source.scss</scope>
+	<description>p,b,m</description>
 </snippet>

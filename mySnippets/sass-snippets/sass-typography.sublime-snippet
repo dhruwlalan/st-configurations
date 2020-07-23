@@ -1,7 +1,9 @@
 
 <snippet>
 	<content><![CDATA[
-@include typo( \$c: ${1:null} , \$ff: ${2:null} , \$fw: ${3:null} , \$fs: ${4:null} $5);$6
+@include typo( \$c: ${1:null} , \$ff: ${2:null} , \$fw: ${3:null} , \$fs: ${4:null} $5);$0
 ]]></content>
 	<tabTrigger>typo</tabTrigger>
+	<scope>source.scss</scope>
+	<description>typography</description>
 </snippet>

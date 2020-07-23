@@ -1,7 +1,9 @@
 
 <snippet>
 	<content><![CDATA[
-@include pos-absolute( \$t: ${1:null} , \$b: ${2:null} , \$l: ${3:null} , \$r: ${4:null} , \$z: ${5:null} $6);$7
+@include pos-absolute( \$t: ${1:null} , \$b: ${2:null} , \$l: ${3:null} , \$r: ${4:null} , \$z: ${5:null} $6);$0
 ]]></content>
 	<tabTrigger>abs</tabTrigger>
+	<scope>source.scss</scope>
+	<description>pos absolute</description>
 </snippet>

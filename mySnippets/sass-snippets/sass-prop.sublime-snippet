@@ -1,6 +1,8 @@
 <snippet>
 	<content><![CDATA[
-, \$$1: ${2:null} 
+, \$$1: ${0:null} 
 ]]></content>
 	<tabTrigger>prop</tabTrigger>
+	<scope>source.scss</scope>
+	<description>property</description>
 </snippet>

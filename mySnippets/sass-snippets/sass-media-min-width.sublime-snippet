@@ -2,10 +2,12 @@
 
 	<content><![CDATA[
 @media (min-width: ${1}) {
-	${2}
+	${0}
 }
 ]]></content>
 
 	<tabTrigger>minm</tabTrigger>
+	<scope>source.scss</scope>
+	<description>min-width</description>
 	
 </snippet>
