@@ -1,0 +1,15 @@
+[
+	{ "keys": ["ctrl+k"], "command": "sql_beautifier" },
+	{ "keys": ["ctrl+e"], "command": "st_execute" },
+    { "keys": ["ctrl+f"], "command": "st_format" },
+    { "keys": ["ctrl+shift+s"], "command": "auto_save" },
+    { "keys": ["ctrl+."], "command": "fold_by_level", "args": {"level": 1} },
+    { "keys": ["ctrl+backspace"], "command": "toggle_side_bar" },
+    { 
+        "keys": ["ctrl+alt+t"], "command": "terminus_open", "args": {
+            "cmd": "C://Windows//System32//cmd.exe",
+            "cwd": "${file_path:${folder}}"
+        }
+    },
+    { "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" }
+]
