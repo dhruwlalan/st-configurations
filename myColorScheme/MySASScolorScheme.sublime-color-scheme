@@ -134,14 +134,21 @@
             {
                 "name": "Color Constants",
                 "scope": "constant.other.color.rgb-value.css.sass",
-                "foreground": "var(white)",
-                "font_style": ""
+                "foreground": "#9E6AFF",
+                "font_style": "bold"
             },
             /* reserved */
             {
                 "name": "Reserved Words",
                 "scope": "keyword.other.reserved.sass",
                 "foreground": "var(reserved)",
+                "font_style": "bold"
+            },
+            /* important */
+            {
+                "name": "Important",
+                "scope": "keyword.other.important.css.sass",
+                "foreground": "tomato",
                 "font_style": "bold"
             },
         //  STRINGS                 
