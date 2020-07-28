@@ -16,6 +16,7 @@
         "function":         "cyan",
         "functionIO":       "orange",
         "objectProperty":   "#ff9999",
+        "this":             "#ff8888",
         "domObject":        "mediumspringgreen"
     },
     "globals":
@@ -135,6 +136,13 @@
                 "foreground": "var(constant)",
                 "font_style": "bold"
             },
+            /* support constants */
+            {
+                "name": "Support Constants",
+                "scope": "support.constant.builtin.js",
+                "foreground": "var(constant)",
+                "font_style": "bold"
+            },
             /* constants numeric */
             {
                 "name": "Constants",
@@ -164,10 +172,17 @@
                 "foreground": "var(operatorLight)",
                 "font_style": "bold"
             },
-             /* arithmetic */
+            /* arithmetic */
             {
                 "name": "Arithmetic Operator",
                 "scope": "keyword.operator.arithmetic.js",
+                "foreground": "var(operatorMedium)",
+                "font_style": "bold"
+            },
+            /* arithmetic augmented*/
+            {
+                "name": "Arithmetic Operator Augmented",
+                "scope": "keyword.operator.assignment.augmented.js",
                 "foreground": "var(operatorMedium)",
                 "font_style": "bold"
             },
@@ -189,6 +204,13 @@
             {
                 "name": "Logical Operator",
                 "scope": "keyword.operator.logical.js",
+                "foreground": "var(operatorDark)",
+                "font_style": "bold"
+            },
+            /* ternary */
+            {
+                "name": "Ternary Operator",
+                "scope": "keyword.operator.ternary.js",
                 "foreground": "var(operatorDark)",
                 "font_style": "bold"
             },
@@ -235,10 +257,23 @@
                 "foreground": "var(function)",
                 "font_style": ""
             },
+            /* arrow functions*/
+            {
+                "name": "Arrow Functions",
+                "scope": "storage.type.function.arrow.js",
+                "foreground": "var(function)",
+                "font_style": "bold"
+            },
             /* built-in functions */
             {
                 "name": "Built-in Functions",
                 "scope": "support.function.js",
+                "foreground": "var(function)",
+                "font_style": ""
+            },
+            {
+                "name": "Built-in Functions 2",
+                "scope": "support.function.builtin.js",
                 "foreground": "var(function)",
                 "font_style": ""
             },
@@ -295,14 +330,14 @@
                 "name": "Object Properties Used",
                 "scope": "meta.property.object.js",
                 "foreground": "var(objectProperty)",
-                "font_style": "italic bold"
+                "font_style": "bold"
             },
             /* key value separator */
             {
                 "name": "Key Value Separator",
                 "scope": "punctuation.separator.key-value.js",
                 "foreground": "var(operator1)",
-                "font_style": ""
+                "font_style": "bold"
             },
             /* dom object document */
             {
@@ -318,8 +353,15 @@
                 "foreground": "var(domObject)",
                 "font_style": "bold italic"
             },
+            /* this */ 
+            {
+                "name": "This",
+                "scope": "variable.language.this.js",
+                "foreground": "var(this)",
+                "font_style": "bold"
+            },
             
-
+        //  CATAGORY
             /* new */ 
             {
                 "name": "name",
