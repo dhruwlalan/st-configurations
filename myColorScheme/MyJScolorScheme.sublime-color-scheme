@@ -214,6 +214,13 @@
                 "foreground": "var(operatorDark)",
                 "font_style": "bold"
             },
+            /* new */
+            {
+                "name": "New Operator",
+                "scope": "keyword.operator.word.new.js",
+                "foreground": "var(keyword)",
+                "font_style": "bold"
+            },
         //  STATEMENT TERMINATOR    
             {
                 "name": "Statement Terminator",
@@ -360,8 +367,73 @@
                 "foreground": "var(this)",
                 "font_style": "bold"
             },
+        //  CLASS                   
+            /* class */ 
+            {
+                "name": "Class",
+                "scope": "storage.type.class.js",
+                "foreground": "var(keyword)",
+                "font_style": "bold"
+            },
+            /* class name */ 
+            {
+                "name": "Class Name",
+                "scope": "entity.name.class.js",
+                "foreground": "var(constant)",
+                "font_style": "bold"
+            },
+            /* class constructor */ 
+            {
+                "name": "Class Constructor",
+                "scope": "entity.name.function.constructor.js",
+                "foreground": "var(function)",
+                "font_style": "bold"
+            },
+            /* class constructor call */ 
+            {
+                "name": "Class Constructor Call",
+                "scope": "meta.function-call.constructor.js",
+                "foreground": "var(constant)",
+                "font_style": "bold"
+            },
+            /* getters and setters */ 
+            {
+                "name": "Getters and Setters",
+                "scope": "storage.type.accessor.js",
+                "foreground": "var(keyword)",
+                "font_style": "bold"
+            },
+            /* built-in class */ 
+            {
+                "name": "Built-in Class",
+                "scope": "support.class.builtin.js",
+                "foreground": "var(constant)",
+                "font_style": "bold"
+            },
+            /* punctuation group begin */ 
+            {
+                "name": "Punctuation Group Begin",
+                "scope": "punctuation.section.group.begin.js",
+                "foreground": "var(white)",
+                "font_style": ""
+            },
+            /* punctuation group end */ 
+            {
+                "name": "Punctuation Group End",
+                "scope": "punctuation.section.group.end.js",
+                "foreground": "var(white)",
+                "font_style": ""
+            },
+        //  TRY CATCH               
+            /* throw */ 
+            {
+                "name": "Throw",
+                "scope": "keyword.control.trycatch.js",
+                "foreground": "var(functionIO)",
+                "font_style": "bold"
+            },
             
-        //  CATAGORY
+        //  CATAGORY                
             /* new */ 
             {
                 "name": "name",
