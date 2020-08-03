@@ -5,6 +5,7 @@
     "variables":
     {
         "white":            "snow",
+        "comment":          "#808080",
         "operatorLight":    "palegoldenrod",
         "operatorMedium":   "khaki",
         "operatorDark":     "yellow",
@@ -66,34 +67,34 @@
             {
                 "name": "Comment Slash",
                 "scope": "comment.line.double-slash.js",
-                "foreground": "#808080",
+                "foreground": "var(comment)",
                 "font_style": "italic"
             },
             /* single line comment double slash */
             {
                 "name": "Comment",
                 "scope": "punctuation.definition.comment.js",
-                "foreground": "#808080",
+                "foreground": "var(comment)",
                 "font_style": ""
             },
             /* multi line comment */
             {
                 "name": "Comment Block",
                 "scope": "comment.block.js",
-                "foreground": "#808080",
+                "foreground": "var(comment)",
                 "font_style": "bold"
             },
         //  VARIABLES               
-            /* variable keyword */
+            /* var let const keywords */
             {
-                "name": "Variable Keyword",
+                "name": "Variable Keywords",
                 "scope": "storage.type.js",
                 "foreground": "var(keyword)",
                 "font_style": "bold"
             },
-            /* variable identifier */
+            /* identifiers */
             {
-                "name": "Variable Identifier",
+                "name": "Identifiers",
                 "scope": "variable.other.readwrite.js",
                 "foreground": "var(white)",
                 "font_style": ""
@@ -122,7 +123,7 @@
             },
             /* template string expression */
             {
-                "name": "Template String expression",
+                "name": "Template String Expression",
                 "scope": "meta.template.expression.js",
                 "background": "var(tsexpressionb)",
                 "foreground": "var(tsexpressionf)",
@@ -143,7 +144,7 @@
                 "foreground": "var(constant)",
                 "font_style": "bold"
             },
-            /* constants numeric */
+            /* constant numeric */
             {
                 "name": "Constants",
                 "scope": "constant.numeric",
@@ -274,22 +275,11 @@
             /* built-in functions */
             {
                 "name": "Built-in Functions",
-                "scope": "support.function.js",
+                "scope": "support.function.js, support.function.builtin.js",
                 "foreground": "var(function)",
                 "font_style": ""
             },
-            {
-                "name": "Built-in Functions 2",
-                "scope": "support.function.builtin.js",
-                "foreground": "var(function)",
-                "font_style": ""
-            },
-            /* function call */
-            {
-                "name": "function call",
-                "scope": "meta.function-call.js variable.function.js",
-                "font_style": "italic"
-            },
+            /* Methods */
             {
                 "name": "Methods",
                 "scope": "variable.function.js",
@@ -298,7 +288,7 @@
             },
             /* support methods */
             {
-                "name": "Methods",
+                "name": "Support Methods",
                 "scope": "support.function.console.js",
                 "foreground": "var(function)",
                 "font_style": ""
@@ -319,7 +309,7 @@
             },
             /* function parameter seperator */
             {
-                "name": "Parameter Seperator",
+                "name": "Function Parameter Seperator",
                 "scope": "punctuation.separator.parameter.function.js",
                 "foreground": "var(operator)",
                 "font_style": ""
@@ -368,9 +358,9 @@
                 "font_style": "bold"
             },
         //  CLASS                   
-            /* class */ 
+            /* class keyword*/ 
             {
-                "name": "Class",
+                "name": "Class Keyword",
                 "scope": "storage.type.class.js",
                 "foreground": "var(keyword)",
                 "font_style": "bold"
@@ -425,21 +415,12 @@
                 "font_style": ""
             },
         //  TRY CATCH               
-            /* throw */ 
+            /* throw keyword*/ 
             {
-                "name": "Throw",
+                "name": "Throw Keyword",
                 "scope": "keyword.control.trycatch.js",
                 "foreground": "var(functionIO)",
                 "font_style": "bold"
-            },
-            
-        //  CATAGORY                
-            /* new */ 
-            {
-                "name": "name",
-                "scope": "scope",
-                "foreground": "red",
-                "font_style": ""
             },
     ]
 }
