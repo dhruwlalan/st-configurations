@@ -10,7 +10,6 @@
 		"AutoFoldCode",
 		"Bootstrap 4 Autocomplete",
 		"ColorHints",
-		"ColorSchemeEditor",
 		"Emmet",
 		"Material Theme",
 		"Package Control",
@@ -19,6 +18,8 @@
 		"SCSS",
 		"SideBarEnhancements",
 		"SQLTools",
+		"SublimeLinter",
+		"SublimeLinter-eslint",
 		"Syntax Highlighting for Sass",
 		"Terminal",
 		"Terminus"

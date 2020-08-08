@@ -2,5 +2,6 @@
 	"extensions":
 	[
 		"ejs"
-	]
+	],
+	"color_scheme": "MyHTMLcolorScheme.sublime-color-scheme"
 }

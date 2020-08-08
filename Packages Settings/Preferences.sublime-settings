@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/User/myColorScheme/Default.tmTheme",
+	"color_scheme": "Packages/User/myColorScheme/MyDEFAULTcolorScheme.sublime-color-scheme",
 	"drag_text": false,
 	"draw_indent_guides": false,
 	"draw_minimap_border": true,
@@ -29,7 +29,7 @@
 		"*.sublime-project"
 	],
 	"font_face": "Fira Mono",
-	"font_size": 17,
+	"font_size": 18,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[

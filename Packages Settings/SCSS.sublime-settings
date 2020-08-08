@@ -1,0 +1,9 @@
+{
+	"color_scheme": "MySASScolorScheme.sublime-color-scheme",
+	"extensions":
+	[
+		"scss",
+		"scss.erb",
+		"SCSS"
+	]
+}
