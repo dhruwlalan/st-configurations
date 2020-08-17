@@ -1,0 +1,3 @@
+[
+	{ "caption": "Open in Git Bash", "command": "open_terminal", "args": {"paths": []} }
+]
