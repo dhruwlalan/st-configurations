@@ -1,8 +1,5 @@
 {
 	"animation_enabled": false,
-	"auto_complete_commit_on_tab": true,
-	"auto_complete_with_fields": true,
-	"close_windows_when_empty": false,
 	"color_scheme": "Packages/User/myColorScheme/MyDEFAULTcolorScheme.sublime-color-scheme",
 	"drag_text": false,
 	"draw_indent_guides": false,
@@ -55,7 +52,6 @@
 	"overlay_scroll_bars": "enabled",
 	"show_definitions": false,
 	"show_errors_inline": false,
-	"tab_completion": false,
 	"theme": "Material-Theme-Darker.sublime-theme",
 	"word_wrap": false
 }

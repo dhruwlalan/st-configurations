@@ -1,3 +1,2 @@
 [
-	{ "caption": "Open Repository", "command": "sublime_merge_open_repo", "args": {"paths": []}}
 ]
