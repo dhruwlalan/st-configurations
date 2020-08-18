@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+switch (${1:expr}) {
+	$0
+}
+]]></content>
+	<tabTrigger>switch</tabTrigger>
+	<scope>source.js</scope>
+	<description>switch</description>
+</snippet>

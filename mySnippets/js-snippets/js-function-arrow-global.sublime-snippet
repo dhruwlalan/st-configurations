@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+const ${1:name} = ($2) => {
+	$0
+}
+]]></content>
+	<tabTrigger>afg</tabTrigger>
+	<scope>source.js</scope>
+	<description>arr func G</description>
+</snippet>
