@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+instanceof
+]]></content>
+	<tabTrigger>instanceof</tabTrigger>
+	<scope>source.js</scope>
+	<description>rw</description>
+</snippet>

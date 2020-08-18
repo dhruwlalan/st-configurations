@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+protected
+]]></content>
+	<tabTrigger>protected</tabTrigger>
+	<scope>source.js</scope>
+	<description>rw</description>
+</snippet>

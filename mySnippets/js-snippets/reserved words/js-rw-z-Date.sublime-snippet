@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+Date
+]]></content>
+	<tabTrigger>date</tabTrigger>
+	<scope>source.js</scope>
+	<description>Date</description>
+</snippet>

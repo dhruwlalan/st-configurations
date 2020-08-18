@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+with
+]]></content>
+	<tabTrigger>with</tabTrigger>
+	<scope>source.js</scope>
+	<description>rw</description>
+</snippet>

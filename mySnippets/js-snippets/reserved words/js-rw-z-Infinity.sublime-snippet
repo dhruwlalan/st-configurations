@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+Infinity
+]]></content>
+	<tabTrigger>infinity</tabTrigger>
+	<scope>source.js</scope>
+	<description>rwz</description>
+</snippet>

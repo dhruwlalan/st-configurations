@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+length
+]]></content>
+	<tabTrigger>length</tabTrigger>
+	<scope>source.js</scope>
+	<description>rwz</description>
+</snippet>

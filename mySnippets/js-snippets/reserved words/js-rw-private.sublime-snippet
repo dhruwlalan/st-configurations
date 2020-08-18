@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+private
+]]></content>
+	<tabTrigger>private</tabTrigger>
+	<scope>source.js</scope>
+	<description>rw</description>
+</snippet>

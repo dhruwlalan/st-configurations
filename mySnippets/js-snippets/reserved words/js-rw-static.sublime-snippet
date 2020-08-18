@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+static
+]]></content>
+	<tabTrigger>static</tabTrigger>
+	<scope>source.js</scope>
+	<description>rw</description>
+</snippet>

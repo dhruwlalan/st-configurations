@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+enum
+]]></content>
+	<tabTrigger>enum</tabTrigger>
+	<scope>source.js</scope>
+	<description>rw</description>
+</snippet>

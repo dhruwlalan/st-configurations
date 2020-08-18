@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+interface
+]]></content>
+	<tabTrigger>interface</tabTrigger>
+	<scope>source.js</scope>
+	<description>rw</description>
+</snippet>

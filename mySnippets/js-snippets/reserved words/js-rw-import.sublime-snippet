@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+import
+]]></content>
+	<tabTrigger>import</tabTrigger>
+	<scope>source.js</scope>
+	<description>rw</description>
+</snippet>

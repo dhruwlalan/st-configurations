@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+extends
+]]></content>
+	<tabTrigger>extends</tabTrigger>
+	<scope>source.js</scope>
+	<description>rw</description>
+</snippet>
