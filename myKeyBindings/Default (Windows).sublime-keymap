@@ -6,4 +6,6 @@
             "cwd": "${file_path:${folder}}"
         }
     },
+    { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} },
+    { "keys": ["ctrl+j"], "command": "insert_snippet", "args": {"name": "Packages/User/Javascript/Snippets/js-template-string-expression.sublime-snippet"} },
 ]
