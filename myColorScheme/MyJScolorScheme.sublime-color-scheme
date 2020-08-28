@@ -12,12 +12,13 @@
         "keyword":          "deeppink",
         "string":           "springgreen",
         "tsexpressionb":    "rgba(124, 124, 124, 0.2)",
-        "tsexpressionf":    "darkgray",
+        "tsexpressionf":    "rgba(124, 124, 124, 0.2)",
         "constant":         "violet",
         "function":         "cyan",
         "functionIO":       "orange",
         "objectProperty":   "#ff9999",
         "this":             "#ff8888",
+        "class":            "#F1FF7B",
         "domObject":        "mediumspringgreen"
     },
     "globals":
@@ -127,7 +128,14 @@
                 "scope": "meta.template.expression.js",
                 "background": "var(tsexpressionb)",
                 "foreground": "var(tsexpressionf)",
-                "font_style": "bold"
+                "font_style": ""
+            },
+            /* template string dot */
+            {
+                "name": "Template String Dot",
+                "scope": "punctuation.accessor.js",
+                "foreground": "var(white)",
+                "font_style": ""
             },
         //  CONSTANTS               
             /* constants */
@@ -369,7 +377,7 @@
             {
                 "name": "Class Name",
                 "scope": "entity.name.class.js",
-                "foreground": "var(constant)",
+                "foreground": "var(class)",
                 "font_style": "bold"
             },
             /* class constructor */ 
@@ -383,7 +391,7 @@
             {
                 "name": "Class Constructor Call",
                 "scope": "meta.function-call.constructor.js",
-                "foreground": "var(constant)",
+                "foreground": "var(class)",
                 "font_style": "bold"
             },
             /* getters and setters */ 
@@ -397,7 +405,7 @@
             {
                 "name": "Built-in Class",
                 "scope": "support.class.builtin.js",
-                "foreground": "var(constant)",
+                "foreground": "var(class)",
                 "font_style": "bold"
             },
             /* punctuation group begin */ 
@@ -420,6 +428,14 @@
                 "name": "Throw Keyword",
                 "scope": "keyword.control.trycatch.js",
                 "foreground": "var(functionIO)",
+                "font_style": "bold"
+            },
+        //  IMPORT EXPORT           
+            /* import export keyword*/ 
+            {
+                "name": "Import Export Keyword",
+                "scope": "keyword.control.import-export.js",
+                "foreground": "var(keyword)",
                 "font_style": "bold"
             },
     ]
