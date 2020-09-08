@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-var
-]]></content>
-	<tabTrigger>var</tabTrigger>
-	<scope>source.js</scope>
-	<description>rw</description>
-</snippet>

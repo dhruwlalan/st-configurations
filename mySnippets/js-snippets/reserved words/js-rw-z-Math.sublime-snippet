@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-Math
-]]></content>
-	<tabTrigger>math</tabTrigger>
-	<scope>source.js</scope>
-	<description>Math</description>
-</snippet>

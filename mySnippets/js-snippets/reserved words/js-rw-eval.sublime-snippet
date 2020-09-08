@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-eval
-]]></content>
-	<tabTrigger>eval</tabTrigger>
-	<scope>source.js</scope>
-	<description>rw</description>
-</snippet>

@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-NaN
-]]></content>
-	<tabTrigger>nan</tabTrigger>
-	<scope>source.js</scope>
-	<description>NaN</description>
-</snippet>

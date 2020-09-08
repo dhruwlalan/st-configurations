@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-class
-]]></content>
-	<tabTrigger>class</tabTrigger>
-	<scope>source.js</scope>
-	<description>rw</description>
-</snippet>

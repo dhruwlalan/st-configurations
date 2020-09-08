@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-Array
-]]></content>
-	<tabTrigger>array</tabTrigger>
-	<scope>source.js</scope>
-	<description>Array</description>
-</snippet>

@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-await
-]]></content>
-	<tabTrigger>await</tabTrigger>
-	<scope>source.js</scope>
-	<description>rw</description>
-</snippet>
