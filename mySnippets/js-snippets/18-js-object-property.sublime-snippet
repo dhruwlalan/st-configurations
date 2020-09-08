@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+${1:variable}: ${2:value} ,$0
+]]></content>
+	<tabTrigger>p</tabTrigger>
+	<scope>source.js</scope>
+	<description>o-property</description>
+</snippet>

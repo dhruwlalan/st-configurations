@@ -1,8 +1,10 @@
 <snippet>
 	<content><![CDATA[
-($1) => $0
+try {
+	$0
+}
 ]]></content>
-	<tabTrigger>afr</tabTrigger>
+	<tabTrigger>try</tabTrigger>
 	<scope>source.js</scope>
-	<description>arr func r</description>
+	<description>try</description>
 </snippet>

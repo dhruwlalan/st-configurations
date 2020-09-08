@@ -2,9 +2,9 @@
 	<content><![CDATA[
 ${1:method} ($2) {
 	$0
-}
+} ,
 ]]></content>
-	<tabTrigger>method</tabTrigger>
+	<tabTrigger>m</tabTrigger>
 	<scope>source.js</scope>
-	<description>method</description>
+	<description>o-method</description>
 </snippet>

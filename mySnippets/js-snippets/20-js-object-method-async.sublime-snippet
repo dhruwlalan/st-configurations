@@ -2,9 +2,9 @@
 	<content><![CDATA[
 async ${1:method} ($2) {
 	$0
-}
+} ,
 ]]></content>
-	<tabTrigger>asmet</tabTrigger>
+	<tabTrigger>asm</tabTrigger>
 	<scope>source.js</scope>
 	<description>async method</description>
 </snippet>
