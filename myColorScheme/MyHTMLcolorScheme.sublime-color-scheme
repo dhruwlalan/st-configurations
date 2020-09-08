@@ -4,7 +4,7 @@
     "author": "dhruw lalan",
     "variables":
     {
-        "white":            "snow",
+        "white":            "white",
         "string":           "mediumspringgreen",
         "constant":         "orange",
         "constantBg":       "rgba(124, 124, 124, 0.2)",
@@ -25,7 +25,7 @@
             "minimap_border": "cyan",
             "accent": "cyan",
         //  GUTTER                  
-            "gutter": "#191919",
+            "gutter": "#161616",
             "gutter_foreground": "#00c9c9",
         //  SELECTION               
             "selection": "#202020",
@@ -62,31 +62,21 @@
                 "font_style": "italic"
             },
         //  DOCTYPE                 
-            /* doctype decleration */ 
             {
-                "name": "Doctype",
+                "name": "Doctype Decleration",
                 "scope": "keyword.declaration.doctype.html",
                 "foreground": "var(tag)",
                 "font_style": "bold"
             },
-            /* doctype html */ 
             {
-                "name": "Doctype html",
+                "name": "Doctype HTML",
                 "scope": "constant.language.doctype.html",
                 "foreground": "var(constant)",
                 "font_style": "bold"
             },
-            /* doctype tag start */ 
             {
-                "name": "Doctype Tag Start",
-                "scope": "meta.tag.sgml.doctype.html punctuation.definition.tag.begin.html",
-                "foreground": "var(white)",
-                "font_style": "bold"
-            },
-            /* doctype tag end */ 
-            {
-                "name": "Doctype Tag End",
-                "scope": "meta.tag.sgml.doctype.html punctuation.definition.tag.end.html",
+                "name": "Doctype Tag Start End",
+                "scope": "meta.tag.sgml.doctype.html punctuation.definition.tag.begin.html , meta.tag.sgml.doctype.html punctuation.definition.tag.end.html",
                 "foreground": "var(white)",
                 "font_style": "bold"
             },
@@ -98,50 +88,37 @@
                 "font_style": ""
             },
         //  TAGS                    
-            /* main tags */
             {
                 "name": "Main Tags",
                 "scope": "entity.name.tag.structure.any.html",
                 "foreground": "var(tag)",
                 "font_style": "bold"
             },
-            /* main tags start */
             {
-                "name": "Main Tags Start",
-                "scope": "meta.tag.structure.any.html punctuation.definition.tag.begin.html",
+                "name": "Main Tags Start End",
+                "scope": "meta.tag.structure.any.html punctuation.definition.tag.begin.html , meta.tag.structure.any.html punctuation.definition.tag.end.html",
                 "foreground": "var(white)",
                 "font_style": "bold"
             },
-            /* main tags end */
-            {
-                "name": "Main Tags End",
-                "scope": "meta.tag.structure.any.html punctuation.definition.tag.end.html",
-                "foreground": "var(white)",
-                "font_style": "bold"
-            },
-            /* sub tags */
             {
                 "name": "Sub Tags",
                 "scope": "entity.name.tag",
                 "foreground": "var(tag)",
-                "font_style": ""
+                "font_style": "bold"
             },
         //  ATTRIBUTE               
-            /* attribute with value */
             {
                 "name": "Attribute With Value",
                 "scope": "meta.attribute-with-value",
                 "foreground": "var(attribute)",
                 "font_style": ""
             },
-            /* attribute key value separator */
             {
                 "name": "Attribute Key Value Separater",
                 "scope": "punctuation.separator.key-value.html",
                 "foreground": "var(white)",
                 "font_style": ""
             },
-            /* attribute with event*/
             {
                 "name": "Attribute with event",
                 "scope": "entity.other.attribute-name.event.html",
@@ -149,14 +126,12 @@
                 "font_style": ""
             },
         //  FUNCTION                
-            /* function*/
             {
                 "name": "function",
                 "scope": "meta.function-call.js variable.function.js",
                 "foreground": "var(function)",
                 "font_style": "bold"
             },
-            /* function call*/
             {
                 "name": "function call",
                 "scope": "meta.group.js",
@@ -165,21 +140,11 @@
             },
         //  CONSTANTS               
             {
-                "name": "Constant Content",
+                "name": "Constant Characters",
                 "scope": "constant.character.entity.named.html",
                 "foreground": "var(constant)",
                 "background": "var(constantBg)",
                 "font_style": "bold"
-            },
-
-
-        //  CATAGORY                
-            /* new */
-            {
-                "name": "name",
-                "scope": "scope",
-                "foreground": "red",
-                "font_style": ""
             },
     ]
 }

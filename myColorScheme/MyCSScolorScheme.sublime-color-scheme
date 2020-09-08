@@ -4,7 +4,7 @@
     "author": "dhruw lalan",
     "variables":
     {
-        "white":               	"snow",
+        "white":               	"white",
         "tagSelector":       	"deeppink",
         "classSelector":        "deepskyblue",
         "idSelector":        	"violet",
@@ -25,7 +25,7 @@
             "minimap_border": "cyan",
             "accent": "cyan",
         //  GUTTER                  
-            "gutter": "#191919",
+            "gutter": "#161616",
             "gutter_foreground": "#00c9c9",
         //  SELECTION               
             "selection": "#202020",
@@ -55,14 +55,12 @@
                 "background": "#FF1E00"
             },
         //  COMMENTS 				
-            /* comment */
             {
                 "name": "Comments",
                 "scope": "comment.block.css",
                 "foreground": "#808080",
                 "font_style": "italic"
             },
-            /* comment slash */
             {
                 "name": "Comment Slash",
                 "scope": "punctuation.definition.comment.css",
@@ -70,50 +68,42 @@
                 "font_style": "bold"
             },
         //  SELECTOR 				
-            /* tag selector */
             {
                 "name": "Tag Selector",
                 "scope": "entity.name.tag.css",
                 "foreground": "var(tagSelector)",
                 "font_style": "bold"
             },
-            /* class selector */
             {
                 "name": "Class Selector",
                 "scope": "entity.other.attribute-name.class.css",
                 "foreground": "var(classSelector)",
                 "font_style": "bold"
             },
-            /* id selector */
             {
                 "name": "ID Selector",
                 "scope": "entity.other.attribute-name.id.css",
                 "foreground": "var(idSelector)",
                 "font_style": "bold"
             },
-            
-            /* root selector */
             {
                 "name": "Root Selector",
                 "scope": "entity.name.tag.wildcard.css",
                 "foreground": "var(tagSelector)",
                 "font_style": "bold"
             },
-            /* psudo element */
             {
                 "name": "Psudo Element",
                 "scope": "entity.other.pseudo-element.css",
                 "foreground": "var(white)",
                 "font_style": "bold"
             },
-            /* psudo class */
             {
                 "name": "Psudo Class",
                 "scope": "entity.other.pseudo-class.css",
                 "foreground": "var(white)",
                 "font_style": "bold"
             },
-            /* combinator */
             {
                 "name": "Combinator",
                 "scope": "punctuation.separator.combinator.css",
@@ -121,14 +111,12 @@
                 "font_style": "bold"
             },
         //  NUMBERS 				
-            /* numbers */
             {
                 "name": "Numbers",
                 "scope": "constant.numeric.css",
                 "foreground": "var(white)",
                 "font_style": ""
             },
-            /* units */
             {
                 "name": "Units",
                 "scope": "keyword.other.unit.css",
@@ -136,14 +124,12 @@
                 "font_style": "bold"
             },
         //  PROPERTIES 				
-            /* property name */
             {
                 "name": "Property Name",
                 "scope": "meta.property-name.css",
                 "foreground": "var(propertyName)",
                 "font_style": ""
             },
-            /* property value */
             {
                 "name": "Property Value",
                 "scope": "meta.property-value.css",
@@ -151,28 +137,18 @@
                 "font_style": ""
             },
         //  FUNCTIONS 				
-            /* support functions */
             {
                 "name": "Support Functions",
                 "scope": "meta.function-call.css support.function",
                 "foreground": "var(function)",
                 "font_style": "bold"
             },
-            /* support functions start */
             {
-                "name": "Support Functions Start",
-                "scope": "punctuation.definition.group.begin.css",
+                "name": "Support Functions Start End",
+                "scope": "punctuation.definition.group.begin.css , punctuation.definition.group.end.css",
                 "foreground": "var(white)",
                 "font_style": ""
             },
-            /* support functions end */
-            {
-                "name": "Support Functions End",
-                "scope": "punctuation.definition.group.end.css",
-                "foreground": "var(white)",
-                "font_style": ""
-            },
-            /* support functions separater */
             {
                 "name": "Support Functions Separater",
                 "scope": "punctuation.separator.css",
@@ -180,42 +156,23 @@
                 "font_style": ""
             },
         //  @RULE 					
-            /* @media */
             {
                 "name": "@media",
                 "scope": "keyword.control.at-rule.media.css",
                 "foreground": "lightsalmon",
                 "font_style": "bold"
             },
-            /* @media query */
             {
                 "name": "@media Query",
                 "scope": "meta.at-rule.media.css support.type.property-name.media.css",
                 "foreground": "khaki",
                 "font_style": "bold"
             },
-            /* @media query start */
             {
-                "name": "@media Query Start",
-                "scope": "meta.at-rule.media.css punctuation.definition.group.begin.css",
+                "name": "@media Query Start End",
+                "scope": "meta.at-rule.media.css punctuation.definition.group.begin.css , meta.at-rule.media.css punctuation.definition.group.end.css",
                 "foreground": "var(white)",
                 "font_style": "bold"
-            },
-            /* @media query end */
-            {
-                "name": "@media Query End",
-                "scope": "meta.at-rule.media.css punctuation.definition.group.end.css",
-                "foreground": "var(white)",
-                "font_style": "bold"
-            },
-
-        //  CATAGORY
-            /* new */
-            {
-                "name": "name",
-                "scope": "scope",
-                "foreground": "red",
-                "font_style": ""
             },
     ]
 }

@@ -4,6 +4,27 @@
     "author": "dhruw lalan",
     "variables":
     {
+        // colors Used
+        "white":                "white",
+        "cyan":                 "cyan",
+        "springgreen":          "springgreen",
+        "mediumspringgreen":    "mediumspringgreen",
+        "deeppink":             "deeppink",
+        "hotpink":              "hotpink",
+        "orange":               "orange",
+        "tomato":               "tomato",
+        "violet":               "violet",
+        "khaki":                "khaki",
+        "palegoldenrod":        "palegoldenrod",
+        "commentGray":          "#808080",
+        "invalidRed":           "#FF1E00",
+        "htmlString":           "#FFEE58",
+        "classyYellow":         "#F1FF7B",
+        "propertyYellow":       "#FFF969",
+        "dullYellow":           "#9F9C42",
+        "propertySkin":         "#ff9999",
+        "constantBlue":         "#9E6AFF",
+        //  variables
         "operatorLight":    "palegoldenrod",
         "operatorMedium":   "khaki",
         "operatorDark":     "yellow",
@@ -43,7 +64,7 @@
     },
     "rules":
     [
-        
+        /* COMMON                 */
         //  INVALID                 
             {
                 "name": "Invalid",
@@ -53,196 +74,56 @@
             },
         //  COMMENTS                
             {
-                "name": "Comment",
+                "name": "HTML Comment",
                 "scope": "comment.block.html",
                 "foreground": "#808080",
                 "font_style": "italic"
             },
-        //  STRINGS                 
             {
-                "name": "Strings",
-                "scope": "string",
-                "foreground": "springgreen",
-                "font_style": ""
-            },
-
-
-        /* HTML                   */
-        //  TAGS                    
-            {
-                "name": "Template Tag",
-                "scope": "text.html.vue vue.template.html",
-                "foreground": "mediumspringgreen",
-                "font_style": "bold"
-            },
-            {
-                "name": "Script Tag",
-                "scope": "text.html.vue entity.name.tag.script.html , meta.tag.script.end.html punctuation.definition.tag.begin.html , meta.tag.script.begin.html punctuation.definition.tag.end.html , meta.tag.script.begin.html punctuation.definition.tag.begin.html , meta.tag.script.end.html punctuation.definition.tag.end.html",
-                "foreground": "mediumspringgreen",
-                "font_style": "bold"
-            },
-            {
-                "name": "Style Tag",
-                "scope": "text.html.vue entity.name.tag.style.html , meta.tag.style.end.html punctuation.definition.tag.begin.html , meta.tag.style.begin.html punctuation.definition.tag.end.html , meta.tag.style.begin.html punctuation.definition.tag.begin.html , meta.tag.style.end.html punctuation.definition.tag.end.html",
-                "foreground": "mediumspringgreen",
-                "font_style": "bold"
-            },
-             {
-                "name": "Custom Tag",
-                "scope": "meta.tag.custom.html entity.name.tag.custom.html , meta.tag.custom.html punctuation.definition.tag.end.html , meta.tag.custom.html punctuation.definition.tag.begin.html",
-                "foreground": "hotpink",
-                "font_style": "bold"
-            },
-            {
-                "name": "Tag Start",
-                "scope": "punctuation.definition.tag.begin.html",
-                "foreground": "white",
-                "font_style": ""
-            },
-            {
-                "name": "Tag End",
-                "scope": "punctuation.definition.tag.end.html",
-                "foreground": "white",
-                "font_style": ""
-            },
-            {
-                "name": "Generic Tags",
-                "scope": "entity.name.tag",
-                "foreground": "deeppink",
-                "font_style": "bold"
-            },
-        //  ATTRIBUTE               
-            {
-                "name": "Generic Attributes",
-                "scope": "meta.attribute-with-value",
-                "foreground": "cyan",
-                "font_style": ""
-            },
-            {
-                "name": "Attribute Key Value Separater",
-                "scope": "punctuation.separator.key-value.html",
-                "foreground": "white",
-                "font_style": "bold"
-            },
-            {
-                "name": "Vue Attribute",
-                "scope": "meta.tag.block.any.html , meta.tag.custom.html",
-                "foreground": "mediumspringgreen",
-                "font_style": "bold"
-            },
-            {
-                "name": "Generic Attribute Strings",
-                "scope": "meta.tag.custom.html punctuation.definition.string.begin.html , meta.tag.custom.html punctuation.definition.string.end.html , meta.attribute-with-value punctuation.definition.string.begin.html , meta.attribute-with-value punctuation.definition.string.end.html",
-                "foreground": "white",
-                "font_style": ""
-            },
-            {
-                "name": "Vue Attribute Strings",
-                "scope": "meta.tag.block.any.html punctuation.definition.string.begin.html , meta.tag.block.any.html punctuation.definition.string.end.html",
-                "foreground": "white",
-                "font_style": "bold"
-            },
-            {
-                "name": "Vue Attribute JS",
-                "scope": "meta.tag.block.any.html punctuation.section.block.begin.js , meta.tag.block.any.html punctuation.section.block.end.js",
-                "foreground": "mediumspringgreen",
-                "font_style": "bold"
-            },
-            {
-                "name": "Vue Interpolation",
-                "scope": "punctuation.definition.template.begin.html , punctuation.definition.template.end.html",
-                "foreground": "mediumspringgreen",
-                "font_style": "bold"
-            },
-        //  STRINGS                 
-            {
-                "name": "Generic Strings",
-                "scope": "string.quoted.double.html punctuation.definition.string.begin.html , string.quoted.double.html punctuation.definition.string.end.html",
-                "foreground": "white",
-                "font_style": "bold"
-            },
-            {
-                "name": "Generic Attributes Strings",
-                "scope": "meta.attribute-with-value string.quoted.double.html",
-                "foreground": "#FFEE58",
-                "font_style": ""
-            },
-        //  FUNCTIONS               
-            {
-                "name": "Function Call",
-                "scope": "meta.function-call.js variable.function.js",
-                "foreground": "cyan",
-                "font_style": ""
-            },
-            {
-                "name": "Function Call Parenthesis",
-                "scope": "meta.function-call.js punctuation.section.group.begin.js , meta.function-call.js punctuation.section.group.end.js",
-                "foreground": "white",
-                "font_style": ""
-            },
-
-
-        /* JS                     */
-        //  COMMENTS                
-            {
-                "name": "Comment Slash",
+                "name": "JS SL Comment Content",
                 "scope": "comment.line.double-slash.js",
                 "foreground": "#808080",
                 "font_style": "italic"
             },
             {
-                "name": "Comment",
+                "name": "JS SL Comment Double Slash",
                 "scope": "punctuation.definition.comment.js",
                 "foreground": "#808080",
                 "font_style": ""
             },
             {
-                "name": "Comment Block",
+                "name": "JS ML Comment",
                 "scope": "comment.block.js",
                 "foreground": "#808080",
                 "font_style": "bold"
             },
-        //  IDENTIFIERS             
             {
-                "name": "Variables",
-                "scope": "variable.other.readwrite.js",
-                "foreground": "white",
+                "name": "SCSS Comment",
+                "scope": "comment.line.sass, comment.block.css.sass",
+                "foreground": "#808080",
                 "font_style": ""
-            },
-        //  KEYWORDS                
-            {
-                "name": "Variable Keywords",
-                "scope": "storage.type",
-                "foreground": "deeppink",
-                "font_style": "bold"
-            },
-            {
-                "name": "Keywords",
-                "scope": "keyword.control",
-                "foreground": "deeppink",
-                "font_style": "bold"
-            },
-            {
-                "name": "New Operator",
-                "scope": "keyword.operator.word.new.js",
-                "foreground": "deeppink",
-                "font_style": "bold"
-            },
-            {
-                "name": "Throw Keyword",
-                "scope": "keyword.control.trycatch.js",
-                "foreground": "orange",
-                "font_style": "bold"
-            },
-            {
-                "name": "Class Keyword",
-                "scope": "storage.type.class.js",
-                "foreground": "deeppink",
-                "font_style": "bold"
             },
         //  STRINGS                 
             {
-                "name": "Strings Quote Start",
+                "name": "Generic Strings",
+                "scope": "string",
+                "foreground": "springgreen",
+                "font_style": ""
+            },
+            {
+                "name": "HTML Generic Strings Quote Begin End",
+                "scope": "string.quoted punctuation.definition.string.begin.html , string.quoted punctuation.definition.string.end.html",
+                "foreground": "white",
+                "font_style": "bold"
+            },
+            {
+                "name": "HTML Generic Strings Content",
+                "scope": "meta.attribute-with-value string.quoted.double.html",
+                "foreground": "#FFEE58",
+                "font_style": ""
+            },
+            {
+                "name": "JS Strings Quote Begin End",
                 "scope": "punctuation.definition.string.begin.js , punctuation.definition.string.end.js",
                 "foreground": "springgreen",
                 "font_style": "bold"
@@ -260,9 +141,163 @@
                 "foreground": "white",
                 "font_style": ""
             },
+
+
+        /* HTML                   */
+        //  TAGS                    
+            {
+                "name": "VUE <template> Tag",
+                "scope": "text.html.vue vue.template.html",
+                "foreground": "mediumspringgreen",
+                "font_style": "bold"
+            },
+            {
+                "name": "VUE <script> Tag",
+                "scope": "text.html.vue entity.name.tag.script.html , meta.tag.script.end.html punctuation.definition.tag.begin.html , meta.tag.script.begin.html punctuation.definition.tag.end.html , meta.tag.script.begin.html punctuation.definition.tag.begin.html , meta.tag.script.end.html punctuation.definition.tag.end.html",
+                "foreground": "mediumspringgreen",
+                "font_style": "bold"
+            },
+            {
+                "name": "VUE <style> Tag",
+                "scope": "text.html.vue entity.name.tag.style.html , meta.tag.style.end.html punctuation.definition.tag.begin.html , meta.tag.style.begin.html punctuation.definition.tag.end.html , meta.tag.style.begin.html punctuation.definition.tag.begin.html , meta.tag.style.end.html punctuation.definition.tag.end.html",
+                "foreground": "mediumspringgreen",
+                "font_style": "bold"
+            },
+             {
+                "name": "Custom Tag",
+                "scope": "meta.tag.custom.html entity.name.tag.custom.html , meta.tag.custom.html punctuation.definition.tag.end.html , meta.tag.custom.html punctuation.definition.tag.begin.html",
+                "foreground": "hotpink",
+                "font_style": "bold"
+            },
+            {
+                "name": "Generic Tags",
+                "scope": "entity.name.tag",
+                "foreground": "deeppink",
+                "font_style": "bold"
+            },
+            {
+                "name": "Generic Tag Begin End",
+                "scope": "punctuation.definition.tag.begin.html , punctuation.definition.tag.end.html",
+                "foreground": "white",
+                "font_style": ""
+            },
+        //  ATTRIBUTE               
+            {
+                "name": "Generic Attribute",
+                "scope": "meta.attribute-with-value",
+                "foreground": "cyan",
+                "font_style": ""
+            },
+            {
+                "name": "Generic Attribute Strings Begin End",
+                "scope": "meta.tag.custom.html punctuation.definition.string.begin.html , meta.tag.custom.html punctuation.definition.string.end.html , meta.attribute-with-value punctuation.definition.string.begin.html , meta.attribute-with-value punctuation.definition.string.end.html",
+                "foreground": "white",
+                "font_style": ""
+            },
+            {
+                "name": "Attribute Key Value Separater",
+                "scope": "punctuation.separator.key-value.html",
+                "foreground": "white",
+                "font_style": "bold"
+            },
+            {
+                "name": "Vue Attribute",
+                "scope": "meta.tag.block.any.html , meta.tag.custom.html",
+                "foreground": "mediumspringgreen",
+                "font_style": "bold"
+            },
+            {
+                "name": "Vue Attribute Inline Tag",
+                "scope": "meta.tag.inline.form.html entity.other.attribute-name.html , meta.tag.inline.form.html punctuation.definition.attribute.html",
+                "foreground": "mediumspringgreen",
+                "font_style": "bold"
+            },
+            {
+                "name": "Vue Attribute Form Tag",
+                "scope": "meta.tag.inline.any.html entity.other.attribute-name.html , meta.tag.inline.any.html punctuation.definition.attribute.html",
+                "foreground": "mediumspringgreen",
+                "font_style": "bold"
+            },
+            {
+                "name": "Vue Attribute Strings Begin End",
+                "scope": "meta.tag.block.any.html punctuation.definition.string.begin.html , meta.tag.block.any.html punctuation.definition.string.end.html",
+                "foreground": "white",
+                "font_style": "bold"
+            },
+            {
+                "name": "Vue Attribute Binding JS Begin End",
+                "scope": "meta.tag.block.any.html punctuation.section.block.begin.js , meta.tag.block.any.html punctuation.section.block.end.js",
+                "foreground": "mediumspringgreen",
+                "font_style": "bold"
+            },
+            {
+                "name": "Vue Interpolation Begin End",
+                "scope": "punctuation.definition.template.begin.html , punctuation.definition.template.end.html",
+                "foreground": "mediumspringgreen",
+                "font_style": ""
+            },
+        //  FUNCTIONS               
+            {
+                "name": "Function Call JS",
+                "scope": "meta.function-call.js variable.function.js",
+                "foreground": "cyan",
+                "font_style": ""
+            },
+            {
+                "name": "Function Call JS Parenthesis Begin End",
+                "scope": "meta.function-call.js punctuation.section.group.begin.js , meta.function-call.js punctuation.section.group.end.js",
+                "foreground": "white",
+                "font_style": ""
+            },
+
+        /* JS                     */
+        //  IDENTIFIERS             
+            {
+                "name": "Variables",
+                "scope": "variable.other.readwrite.js",
+                "foreground": "white",
+                "font_style": ""
+            },
+        //  KEYWORDS                
+            {
+                "name": "Variable Keywords",
+                "scope": "storage.type",
+                "foreground": "deeppink",
+                "font_style": "bold"
+            },
+            {
+                "name": "Control Keywords",
+                "scope": "keyword.control",
+                "foreground": "deeppink",
+                "font_style": "bold"
+            },
+            {
+                "name": "New Operator Keyword",
+                "scope": "keyword.operator.word.new.js",
+                "foreground": "deeppink",
+                "font_style": "bold"
+            },
+            {
+                "name": "Throw Keyword",
+                "scope": "keyword.control.trycatch.js",
+                "foreground": "orange",
+                "font_style": "bold"
+            },
+            {
+                "name": "Class Keyword",
+                "scope": "storage.type.class.js",
+                "foreground": "deeppink",
+                "font_style": "bold"
+            },
+            {
+                "name": "This Keyword",
+                "scope": "variable.language.this.js",
+                "foreground": "khaki",
+                "font_style": "bold"
+            },
         //  CONSTANTS               
             {
-                "name": "Constants",
+                "name": "Generic Constants",
                 "scope": "constant",
                 "foreground": "orange",
                 "font_style": "bold"
@@ -270,18 +305,18 @@
             {
                 "name": "Support Constants",
                 "scope": "support.constant.builtin.js",
-                "foreground": "orange",
+                "foreground": "violet",
                 "font_style": "bold"
             },
             {
-                "name": "Constant Numeric",
+                "name": "Numeric Constants",
                 "scope": "constant.numeric.decimal.js",
                 "foreground": "violet",
                 "font_style": "bold"
             },
             {
-                "name": "Constants Booleans",
-                "scope": "constant.language.boolean.true.js",
+                "name": "Language Constants",
+                "scope": "constant.language",
                 "foreground": "orange",
                 "font_style": "bold"
             }, 
@@ -293,9 +328,9 @@
                 "font_style": ""
             },
             {
-                "name": "Punctuation Group",
+                "name": "Punctuation Group Begin End",
                 "scope": "punctuation.section.group.begin.js , punctuation.section.group.end.js",
-                "foreground": "var(white)",
+                "foreground": "white",
                 "font_style": ""
             },
         //  OPERATORS               
@@ -306,14 +341,14 @@
                 "font_style": "bold"
             },
             {
-                "name": "Arithmetic Operator",
-                "scope": "keyword.operator.arithmetic.js",
+                "name": "Assignment Operator Augmented",
+                "scope": "keyword.operator.assignment.augmented.js",
                 "foreground": "var(operatorMedium)",
                 "font_style": "bold"
             },
             {
-                "name": "Assignment Operator Augmented",
-                "scope": "keyword.operator.assignment.augmented.js",
+                "name": "Arithmetic Operator",
+                "scope": "keyword.operator.arithmetic.js",
                 "foreground": "var(operatorMedium)",
                 "font_style": "bold"
             },
@@ -349,13 +384,19 @@
                 "font_style": "bold"
             },
             {
-                "name": "Arrow Functions",
+                "name": "Function Call",
+                "scope": "variable.function.js",
+                "foreground": "cyan",
+                "font_style": ""
+            },
+            {
+                "name": "Arrow Function",
                 "scope": "storage.type.function.arrow.js",
                 "foreground": "cyan",
                 "font_style": "bold"
             },
             {
-                "name": "Support Functions",
+                "name": "Support Function",
                 "scope": "support.function",
                 "foreground": "cyan",
                 "font_style": ""
@@ -367,13 +408,13 @@
                 "font_style": "bold"
             },
             {
-                "name": "Catch function parameter",
+                "name": "Catch function Parameter",
                 "scope": "meta.catch.js variable.other.readwrite.js",
                 "foreground": "orange",
                 "font_style": "bold"
             },
             {
-                "name": "Catch function parameter",
+                "name": "Catch Block Function Call Parameter",
                 "scope": "meta.catch.js meta.function-call.method.js variable.other.readwrite.js",
                 "foreground": "white",
                 "font_style": ""
@@ -388,12 +429,6 @@
                 "name": "Function Parameter Seperator",
                 "scope": "punctuation.separator.parameter.function.js",
                 "foreground": "var(operator)",
-                "font_style": ""
-            },
-            {
-                "name": "Function Call",
-                "scope": "variable.function.js",
-                "foreground": "cyan",
                 "font_style": ""
             },
         //  OBJECTS                 
@@ -416,16 +451,10 @@
                 "font_style": "bold"
             },
             {
-                "name": "DOM Object document",
+                "name": "DOM Objects",
                 "scope": "support.type.object",
                 "foreground": "mediumspringgreen",
                 "font_style": "italic bold"
-            },
-            {
-                "name": "This",
-                "scope": "variable.language.this.js",
-                "foreground": "khaki",
-                "font_style": "bold"
             },
         //  CLASS                   
             {
@@ -449,7 +478,7 @@
             {
                 "name": "Getters and Setters",
                 "scope": "storage.type.accessor.js",
-                "foreground": "var(keyword)",
+                "foreground": "deeppink",
                 "font_style": "bold"
             },
             {
@@ -458,7 +487,6 @@
                 "foreground": "#F1FF7B",
                 "font_style": "bold"
             },
-
 
         /* SCSS                   */
         //  SELECTOR                
@@ -504,13 +532,6 @@
                 "foreground": "deeppink",
                 "font_style": "bold"
             },
-        //  COMMENT                 
-            {
-                "name": "Comment Scss",
-                "scope": "comment.line.sass",
-                "foreground": "#808080",
-                "font_style": ""
-            },
         //  NUMBERS                 
             {
                 "name": "Numbers",
@@ -542,13 +563,6 @@
                 "scope": "keyword.other.important.css.sass",
                 "foreground": "tomato",
                 "font_style": "bold"
-            },
-        //  STRINGS                 
-            {
-                "name": "Strings",
-                "scope": "string",
-                "foreground": "springgreen",
-                "font_style": ""
             },
         //  PROPERTIES              
             {

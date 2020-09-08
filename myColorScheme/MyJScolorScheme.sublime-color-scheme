@@ -4,7 +4,7 @@
     "author": "dhruw lalan",
     "variables":
     {
-        "white":            "snow",
+        "white":            "white",
         "comment":          "#808080",
         "operatorLight":    "palegoldenrod",
         "operatorMedium":   "khaki",
@@ -17,7 +17,7 @@
         "function":         "cyan",
         "functionIO":       "orange",
         "objectProperty":   "#ff9999",
-        "this":             "#ff8888",
+        "this":             "khaki",
         "class":            "#F1FF7B",
         "domObject":        "mediumspringgreen"
     },
@@ -34,7 +34,7 @@
             "minimap_border": "cyan",
             "accent": "cyan",
         //  GUTTER                  
-            "gutter": "#191919",
+            "gutter": "#161616",
             "gutter_foreground": "#00c9c9",
         //  SELECTION               
             "selection": "#202020",
@@ -64,21 +64,17 @@
                 "background": "#FF1E00"
             },
         //  COMMENTS                
-            /* single line comment content */
             {
-                "name": "Comment Slash",
+                "name": "Single Line Comment Content",
                 "scope": "comment.line.double-slash.js",
                 "foreground": "var(comment)",
                 "font_style": "italic"
-            },
-            /* single line comment double slash */
-            {
-                "name": "Comment",
+            },            {
+                "name": "Single Line Comment Double Slash",
                 "scope": "punctuation.definition.comment.js",
                 "foreground": "var(comment)",
-                "font_style": ""
+                "font_style": "bold"
             },
-            /* multi line comment */
             {
                 "name": "Comment Block",
                 "scope": "comment.block.js",
@@ -86,14 +82,12 @@
                 "font_style": "bold"
             },
         //  VARIABLES               
-            /* var let const keywords */
             {
-                "name": "Variable Keywords",
+                "name": "Variable Defining Keywords",
                 "scope": "storage.type.js",
                 "foreground": "var(keyword)",
                 "font_style": "bold"
-            },
-            /* identifiers */
+            }, 
             {
                 "name": "Identifiers",
                 "scope": "variable.other.readwrite.js",
@@ -101,28 +95,18 @@
                 "font_style": ""
             },
         //  STRINGS                 
-            /* strings */
             {
-                "name": "Strings",
+                "name": "String Content",
                 "scope": "string",
                 "foreground": "var(string)",
                 "font_style": ""
             },
-            /* strings quote start */
             {
-                "name": "Strings Quote Start",
-                "scope": "punctuation.definition.string.begin.js",
+                "name": "Strings Quote Start End",
+                "scope": "punctuation.definition.string.begin.js , punctuation.definition.string.end.js",
                 "foreground": "var(string)",
                 "font_style": "bold"
             },
-            /* strings quote end*/
-            {
-                "name": "Strings Quote End",
-                "scope": "punctuation.definition.string.end.js",
-                "foreground": "var(string)",
-                "font_style": "bold"
-            },
-            /* template string expression */
             {
                 "name": "Template String Expression",
                 "scope": "meta.template.expression.js",
@@ -130,7 +114,6 @@
                 "foreground": "var(tsexpressionf)",
                 "font_style": ""
             },
-            /* template string dot */
             {
                 "name": "Template String Dot",
                 "scope": "punctuation.accessor.js",
@@ -138,97 +121,90 @@
                 "font_style": ""
             },
         //  CONSTANTS               
-            /* constants */
             {
-                "name": "Constants",
+                "name": "Generic Constants",
                 "scope": "constant",
                 "foreground": "var(constant)",
                 "font_style": "bold"
             },
-            /* support constants */
             {
                 "name": "Support Constants",
                 "scope": "support.constant.builtin.js",
                 "foreground": "var(constant)",
                 "font_style": "bold"
             },
-            /* constant numeric */
             {
-                "name": "Constants",
+                "name": "Numeric Constants",
                 "scope": "constant.numeric",
                 "foreground": "var(constant)",
                 "font_style": ""
             },
-            /* constant boolean */
             {
-                "name": "Constants Booleans",
+                "name": "Boolean Constants",
                 "scope": "constant.language.boolean.true.js",
                 "foreground": "var(constant)",
                 "font_style": "bold"
             },         
         //  OPERATORS               
-            /* comma */
             {
-                "name": "Comma",
+                "name": "Comma Operator",
                 "scope": "punctuation.separator.comma.js",
                 "foreground": "var(white)",
                 "font_style": ""
             },
-            /* assignment */
             {
                 "name": "Asignment Operator",
                 "scope": "keyword.operator.assignment.js",
                 "foreground": "var(operatorLight)",
                 "font_style": "bold"
             },
-            /* arithmetic */
             {
                 "name": "Arithmetic Operator",
                 "scope": "keyword.operator.arithmetic.js",
                 "foreground": "var(operatorMedium)",
                 "font_style": "bold"
             },
-            /* arithmetic augmented*/
             {
-                "name": "Arithmetic Operator Augmented",
+                "name": "Asignment Operator Augmented",
                 "scope": "keyword.operator.assignment.augmented.js",
                 "foreground": "var(operatorMedium)",
                 "font_style": "bold"
             },
-            /* comparision */
             {
                 "name": "Comparision Operator",
                 "scope": "keyword.operator.comparison.js",
                 "foreground": "var(operatorMedium)",
                 "font_style": "bold"
             },
-            /* relational */
             {
                 "name": "Relational Operator",
                 "scope": "keyword.operator.relational.js",
                 "foreground": "var(operatorMedium)",
                 "font_style": "bold"
             },
-            /* logical */
             {
                 "name": "Logical Operator",
                 "scope": "keyword.operator.logical.js",
                 "foreground": "var(operatorDark)",
                 "font_style": "bold"
             },
-            /* ternary */
             {
                 "name": "Ternary Operator",
                 "scope": "keyword.operator.ternary.js",
                 "foreground": "var(operatorDark)",
                 "font_style": "bold"
             },
-            /* new */
             {
                 "name": "New Operator",
                 "scope": "keyword.operator.word.new.js",
                 "foreground": "var(keyword)",
                 "font_style": "bold"
+            },
+            {
+                "name": "Punctuation Group Begin End",
+                "scope": "punctuation.section",
+                "foreground": "var(white)",
+                "font_style": ""
             },
         //  STATEMENT TERMINATOR    
             {
@@ -237,85 +213,62 @@
                 "foreground": "var(white)",
                 "font_style": ""
             },
-        //  IF ELSE                 
+        //  CONDITIONALS            
             {
                 "name": "Conditional Keywords",
-                "scope": "keyword.control.conditional.js",
-                "foreground": "var(keyword)",
-                "font_style": "bold"
-            },
-        //  SWITCH                  
-            {
-                "name": "Switch Keyword",
-                "scope": "keyword.control.switch.js",
-                "foreground": "var(keyword)",
-                "font_style": "bold"
-            },
-        //  LOOPS                   
-            {
-                "name": "Loops",
-                "scope": "keyword.control.loop.js",
+                "scope": "keyword.control",
                 "foreground": "var(keyword)",
                 "font_style": "bold"
             },
         //  FUNCTIONS & METHODS     
-            /* function keyword */
             {
                 "name": "Function Keyword",
                 "scope": "storage.type.function.js",
                 "foreground": "var(keyword)",
                 "font_style": "bold"
             },
-            /* functions*/
             {
-                "name": "Function Decleration",
+                "name": "Function Name",
                 "scope": "entity.name.function.js",
                 "foreground": "var(function)",
                 "font_style": ""
             },
-            /* arrow functions*/
             {
-                "name": "Arrow Functions",
+                "name": "Arrow Function",
                 "scope": "storage.type.function.arrow.js",
                 "foreground": "var(function)",
                 "font_style": "bold"
             },
-            /* built-in functions */
             {
-                "name": "Built-in Functions",
+                "name": "Built-in Function",
                 "scope": "support.function.js, support.function.builtin.js",
                 "foreground": "var(function)",
                 "font_style": ""
             },
-            /* Methods */
             {
                 "name": "Methods",
                 "scope": "variable.function.js",
                 "foreground": "var(function)",
                 "font_style": ""
             },
-            /* support methods */
             {
                 "name": "Support Methods",
                 "scope": "support.function.console.js",
                 "foreground": "var(function)",
                 "font_style": ""
             },
-            /* function input */
             {
                 "name": "Function Parameters",
                 "scope": "variable.parameter.function.js",
                 "foreground": "var(functionIO)",
                 "font_style": "bold"
             },
-            /* function output */
             {
                 "name": "Return Statement",
                 "scope": "keyword.control.flow.js",
                 "foreground": "var(functionIO)",
                 "font_style": "bold"
             },
-            /* function parameter seperator */
             {
                 "name": "Function Parameter Seperator",
                 "scope": "punctuation.separator.parameter.function.js",
@@ -323,119 +276,78 @@
                 "font_style": ""
             },
         //  OBJECTS                 
-            /* object properties */
             {
                 "name": "Object Properties",
                 "scope": "meta.object-literal.key.js",
                 "foreground": "var(objectProperty)",
                 "font_style": "bold"
             },
-            /* object properties used */
             {
                 "name": "Object Properties Used",
                 "scope": "meta.property.object.js",
                 "foreground": "var(objectProperty)",
                 "font_style": "bold"
             },
-            /* key value separator */
             {
                 "name": "Key Value Separator",
                 "scope": "punctuation.separator.key-value.js",
                 "foreground": "var(operator1)",
                 "font_style": "bold"
             },
-            /* dom object document */
             {
-                "name": "DOM Object document",
-                "scope": "support.type.object.dom.js",
+                "name": "Supporting Object",
+                "scope": "support.type.object",
                 "foreground": "var(domObject)",
                 "font_style": "italic bold"
             },
-            /* dom object console */
             {
-                "name": "DOM Object console",
-                "scope": "support.type.object.console.js",
-                "foreground": "var(domObject)",
-                "font_style": "bold italic"
-            },
-            /* this */ 
-            {
-                "name": "This",
+                "name": "This Keyword",
                 "scope": "variable.language.this.js",
                 "foreground": "var(this)",
                 "font_style": "bold"
             },
         //  CLASS                   
-            /* class keyword*/ 
             {
                 "name": "Class Keyword",
                 "scope": "storage.type.class.js",
                 "foreground": "var(keyword)",
                 "font_style": "bold"
             },
-            /* class name */ 
             {
                 "name": "Class Name",
                 "scope": "entity.name.class.js",
                 "foreground": "var(class)",
                 "font_style": "bold"
             },
-            /* class constructor */ 
             {
-                "name": "Class Constructor",
+                "name": "Class Constructor Name",
                 "scope": "entity.name.function.constructor.js",
                 "foreground": "var(function)",
                 "font_style": "bold"
             },
-            /* class constructor call */ 
             {
                 "name": "Class Constructor Call",
                 "scope": "meta.function-call.constructor.js",
                 "foreground": "var(class)",
                 "font_style": "bold"
             },
-            /* getters and setters */ 
             {
                 "name": "Getters and Setters",
                 "scope": "storage.type.accessor.js",
                 "foreground": "var(keyword)",
                 "font_style": "bold"
             },
-            /* built-in class */ 
             {
                 "name": "Built-in Class",
                 "scope": "support.class.builtin.js",
                 "foreground": "var(class)",
                 "font_style": "bold"
             },
-            /* punctuation group begin */ 
-            {
-                "name": "Punctuation Group Begin",
-                "scope": "punctuation.section.group.begin.js",
-                "foreground": "var(white)",
-                "font_style": ""
-            },
-            /* punctuation group end */ 
-            {
-                "name": "Punctuation Group End",
-                "scope": "punctuation.section.group.end.js",
-                "foreground": "var(white)",
-                "font_style": ""
-            },
         //  TRY CATCH               
-            /* throw keyword*/ 
             {
                 "name": "Throw Keyword",
                 "scope": "keyword.control.trycatch.js",
                 "foreground": "var(functionIO)",
-                "font_style": "bold"
-            },
-        //  IMPORT EXPORT           
-            /* import export keyword*/ 
-            {
-                "name": "Import Export Keyword",
-                "scope": "keyword.control.import-export.js",
-                "foreground": "var(keyword)",
                 "font_style": "bold"
             },
     ]

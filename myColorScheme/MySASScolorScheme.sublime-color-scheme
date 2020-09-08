@@ -4,10 +4,11 @@
     "author": "dhruw lalan",
     "variables":
     {
-        "white":                "snow",
+        "white":                "white",
         "tagSelector":          "deeppink",
         "classSelector":        "deepskyblue",
         "idSelector":           "violet",
+        "psudoSelector":        "khaki",
         "string":               "springgreen",
         "reserved":             "#9F9C42",
         "propertyName":         "mediumspringgreen",
@@ -29,7 +30,7 @@
             "minimap_border": "cyan",
             "accent": "cyan",
         //  GUTTER                  
-            "gutter": "#191919",
+            "gutter": "#161616",
             "gutter_foreground": "#00c9c9",
         //  SELECTION               
             "selection": "#202020",
@@ -66,49 +67,42 @@
                 "font_style": ""
             },
         //  SELECTOR                
-            /* tag selector */
             {
                 "name": "Tag Selector",
                 "scope": "entity.name.tag.css.sass",
                 "foreground": "var(tagSelector)",
                 "font_style": "bold"
             },
-            /* class selector */
             {
                 "name": "Class Selector",
                 "scope": "entity.other.attribute-name.class.css.sass",
                 "foreground": "var(classSelector)",
                 "font_style": "bold"
             },
-            /* id selector */
             {
                 "name": "ID Selector",
                 "scope": "entity.other.attribute-name.id.css.sass",
                 "foreground": "var(idSelector)",
                 "font_style": "bold"
             },
-            /* root selector */
             {
                 "name": "Root Selector",
                 "scope": "keyword.operator.css.sass",
                 "foreground": "var(tagSelector)",
                 "font_style": "bold"
             },
-            /* psudo element */
             {
                 "name": "Psudo Element",
                 "scope": "entity.other.pseudo-element.css.sass",
-                "foreground": "var(white)",
+                "foreground": "var(psudoSelector)",
                 "font_style": "bold"
             },
-            /* psudo class */
             {
                 "name": "Psudo Class",
                 "scope": "entity.other.pseudo-class.css.sass",
-                "foreground": "var(white)",
+                "foreground": "var(psudoSelector)",
                 "font_style": "bold"
             },
-            /* parent selector */
             {
                 "name": "Parent Selector",
                 "scope": "keyword.other.parent-selector.sass",
@@ -123,28 +117,24 @@
                 "font_style": ""
             },
         //  CONSTANTS               
-            /* units */
             {
                 "name": "Units",
                 "scope": "keyword.other.unit.css.sass",
                 "foreground": "var(tagSelector)",
                 "font_style": "bold"
             },
-            /* constants */
             {
                 "name": "Color Constants",
                 "scope": "constant.other.color.rgb-value.css.sass",
                 "foreground": "#9E6AFF",
                 "font_style": "bold"
             },
-            /* reserved */
             {
                 "name": "Reserved Words",
                 "scope": "keyword.other.reserved.sass",
                 "foreground": "var(reserved)",
                 "font_style": "bold"
             },
-            /* important */
             {
                 "name": "Important",
                 "scope": "keyword.other.important.css.sass",
@@ -159,14 +149,12 @@
                 "font_style": ""
             },    
         //  PROPERTIES              
-            /* property name */
             {
                 "name": "Property Name",
                 "scope": "support.type.property-name.css.sass",
                 "foreground": "var(propertyName)",
                 "font_style": ""
             },
-            /* property value */
             {
                 "name": "Property Value",
                 "scope": "support.constant.property-value.css.sass",
@@ -174,21 +162,18 @@
                 "font_style": ""
             },
         //  FUNCTIONS               
-            /* support functions */
             {
                 "name": "Support Functions",
                 "scope": "support.function.sass",
                 "foreground": "var(function)",
                 "font_style": "bold"
             },
-            /* mixin functions */
             {
                 "name": "Mixin Functions",
                 "scope": "entity.name.function.sass",
                 "foreground": "springgreen",
                 "font_style": "bold"
             },
-            /* support functions parameter */
             {
                 "name": "Support Functions Parameter",
                 "scope": "variable.parameter.sass",
@@ -201,15 +186,6 @@
                 "scope": "keyword.control.at-rule.css.sass",
                 "foreground": "var(media)",
                 "font_style": "bold"
-            },
-        
-        //  CATAGORY
-            /* new */ 
-            {
-                "name": "name",
-                "scope": "scope",
-                "foreground": "red",
-                "font_style": ""
             },
     ]
 }
