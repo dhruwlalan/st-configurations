@@ -14,7 +14,7 @@
             "minimap_border": "cyan",
             "accent": "cyan",
         //  GUTTER                  
-            "gutter": "#161616",
+            "gutter": "#191919",
             "gutter_foreground": "#00c9c9",
         //  SELECTION               
             "selection": "#202020",

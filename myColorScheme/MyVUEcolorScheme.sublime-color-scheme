@@ -64,7 +64,7 @@
     },
     "rules":
     [
-        /* COMMON                 */
+        /*  COMMON                */
         //  INVALID                 
             {
                 "name": "Invalid",
@@ -137,7 +137,7 @@
             },
 
 
-        /* HTML                   */
+        /*  HTML                  */
         //  TAGS                    
             {
                 "name": "VUE <template> Tag",
@@ -269,7 +269,7 @@
                 "font_style": "bold"
             },
 
-        /* JS                     */
+        /*  JS                    */
         //  IDENTIFIERS             
             {
                 "name": "Variables",
@@ -507,7 +507,7 @@
                 "font_style": "bold"
             },
 
-        /* SCSS                   */
+        /*  SCSS                  */
         //  SELECTOR                
             {
                 "name": "Tag Selector",
