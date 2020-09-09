@@ -111,12 +111,6 @@
                 "font_style": ""
             },
             {
-                "name": "HTML Generic Strings Quote Begin End",
-                "scope": "string.quoted punctuation.definition.string.begin.html , string.quoted punctuation.definition.string.end.html",
-                "foreground": "white",
-                "font_style": "bold"
-            },
-            {
                 "name": "HTML Generic Strings Content",
                 "scope": "meta.attribute-with-value string.quoted.double.html",
                 "foreground": "#FFEE58",
@@ -184,56 +178,74 @@
         //  ATTRIBUTE               
             {
                 "name": "Generic Attribute",
-                "scope": "meta.attribute-with-value",
+                "scope": "meta.attribute-with-value , meta.tag meta.attribute-with-value entity.other.attribute-name.html",
                 "foreground": "cyan",
                 "font_style": ""
             },
             {
                 "name": "Generic Attribute Strings Begin End",
-                "scope": "meta.tag.custom.html punctuation.definition.string.begin.html , meta.tag.custom.html punctuation.definition.string.end.html , meta.attribute-with-value punctuation.definition.string.begin.html , meta.attribute-with-value punctuation.definition.string.end.html",
+                "scope": "meta.tag meta.attribute-with-value string.quoted.double punctuation.definition.string",
+                "foreground": "#FFEE58",
+                "font_style": ""
+            },
+            {
+                "name": "General Attribute Key Value Separater",
+                "scope": "meta.attribute-with-value punctuation.separator , meta.tag meta.attribute-with-value punctuation.separator",
                 "foreground": "white",
                 "font_style": ""
             },
             {
-                "name": "Attribute Key Value Separater",
-                "scope": "punctuation.separator.key-value.html",
-                "foreground": "white",
+                "name": "Vue Attribute Block Tag",
+                "scope": "meta.tag.block.any.html , meta.tag.block entity.other.attribute-name.html , meta.tag.block punctuation.definition.attribute , meta.tag.custom.html",
+                "foreground": "mediumspringgreen",
                 "font_style": "bold"
             },
             {
-                "name": "Vue Attribute",
-                "scope": "meta.tag.block.any.html , meta.tag.custom.html",
+                "name": "Vue Attribute Block Seperater & String Quotes",
+                "scope": "meta.tag.block.any.html punctuation.separator , meta.tag.block.any.html punctuation.definition.string",
                 "foreground": "mediumspringgreen",
                 "font_style": "bold"
             },
             {
                 "name": "Vue Attribute Inline Tag",
-                "scope": "meta.tag.inline.form.html entity.other.attribute-name.html , meta.tag.inline.form.html punctuation.definition.attribute.html",
+                "scope": "meta.tag.inline entity.other.attribute-name.html , meta.tag.inline punctuation.definition",
                 "foreground": "mediumspringgreen",
                 "font_style": "bold"
             },
             {
-                "name": "Vue Attribute Form Tag",
-                "scope": "meta.tag.inline.any.html entity.other.attribute-name.html , meta.tag.inline.any.html punctuation.definition.attribute.html",
-                "foreground": "mediumspringgreen",
-                "font_style": "bold"
-            },
-            {
-                "name": "Vue Attribute Strings Begin End",
-                "scope": "meta.tag.block.any.html punctuation.definition.string.begin.html , meta.tag.block.any.html punctuation.definition.string.end.html",
-                "foreground": "white",
-                "font_style": "bold"
-            },
-            {
-                "name": "Vue Attribute Binding JS Begin End",
-                "scope": "meta.tag.block.any.html punctuation.section.block.begin.js , meta.tag.block.any.html punctuation.section.block.end.js",
+                "name": "Vue Attribute Inline Seperater & String Quotes",
+                "scope": "meta.tag.inline punctuation.separator , meta.tag.inline punctuation.definition.string",
                 "foreground": "mediumspringgreen",
                 "font_style": "bold"
             },
             {
                 "name": "Vue Interpolation Begin End",
-                "scope": "punctuation.definition.template.begin.html , punctuation.definition.template.end.html",
+                "scope": "punctuation.definition.template",
                 "foreground": "mediumspringgreen",
+                "font_style": "bold"
+            },
+            {
+                "name": "Vue Attribute Binding JS",
+                "scope": "meta.tag source.js.embedded.vue punctuation.section.block",
+                "foreground": "mediumspringgreen",
+                "font_style": ""
+            },
+            {
+                "name": "Vue Attribute Binding JS Label",
+                "scope": "source.js.embedded.vue entity.name.label.js",
+                "foreground": "#ff9999",
+                "font_style": "bold"
+            },
+            {
+                "name": "Vue Attribute Binding JS Strings",
+                "scope": "source.js.embedded.vue string.quoted",
+                "foreground": "#FFEE58",
+                "font_style": ""
+            },
+            {
+                "name": "Vue Attribute Binding JS Strings Quoted Begin End",
+                "scope": "source.js.embedded.vue punctuation.definition.string.begin.js , source.js.embedded.vue punctuation.definition.string.end.js",
+                "foreground": "#FFEE58",
                 "font_style": ""
             },
         //  FUNCTIONS               
@@ -248,6 +260,13 @@
                 "scope": "meta.function-call.js punctuation.section.group.begin.js , meta.function-call.js punctuation.section.group.end.js",
                 "foreground": "white",
                 "font_style": ""
+            },
+        //  VUE JS                  
+            {
+                "name": "JS Embed Keyword",
+                "scope": "source.js.embedded.vue keyword.operator.js",
+                "foreground": "violet",
+                "font_style": "bold"
             },
 
         /* JS                     */
