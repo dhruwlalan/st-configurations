@@ -1,9 +1,0 @@
-
-<snippet>
-	<content><![CDATA[
-@include box( \$$1: ${2:null} , \$$3: ${4:null} $5);$0
-]]></content>
-	<tabTrigger>pbm2</tabTrigger>
-	<scope>source.scss</scope>
-	<description>pbm 2</description>
-</snippet>

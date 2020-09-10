@@ -1,9 +1,0 @@
-
-<snippet>
-	<content><![CDATA[
-@include flex( \$jc: ${1:null} , \$ai: ${2:null} $3);$0
-]]></content>
-	<tabTrigger>flex</tabTrigger>
-	<scope>source.scss</scope>
-	<description>flexbox</description>
-</snippet>

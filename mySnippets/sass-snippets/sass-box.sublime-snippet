@@ -1,9 +1,0 @@
-
-<snippet>
-	<content><![CDATA[
-@include box( \$h: ${1:null} , \$w: ${2:null} , \$p: ${3:null} , \$b: ${4:null} , \$m: ${5:null} $6);$0
-]]></content>
-	<tabTrigger>box</tabTrigger>
-	<scope>source.scss</scope>
-	<description>h,w,p,b,m</description>
-</snippet>
