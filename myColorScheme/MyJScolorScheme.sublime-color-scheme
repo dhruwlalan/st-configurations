@@ -343,6 +343,24 @@
                 "foreground": "var(class)",
                 "font_style": "bold"
             },
+            {
+                "name": "Support Class",
+                "scope": "support.class.js",
+                "foreground": "#F1FF7B",
+                "font_style": "bold"
+            },
+            {
+                "name": "Support Class Import",
+                "scope": "source.js meta.import.js variable.other.readwrite.js",
+                "foreground": "#F1FF7B",
+                "font_style": "bold"
+            },
+            {
+                "name": "Support Class Import Punctuation",
+                "scope": "meta.import.js meta.block.js punctuation.section.block , meta.import.js meta.block.js punctuation.separator.comma.js",
+                "foreground": "white",
+                "font_style": "bold"
+            },
         //  TRY CATCH               
             {
                 "name": "Throw Keyword",

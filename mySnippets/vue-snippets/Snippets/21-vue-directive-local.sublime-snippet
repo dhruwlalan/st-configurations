@@ -1,0 +1,15 @@
+
+<snippet>
+	<content><![CDATA[
+directives: {
+	'${1:name}': {
+		bind (el , binding , vnode) {
+			$0
+		} ,
+	}
+} ,
+]]></content>
+	<tabTrigger>directives</tabTrigger>
+	<scope>text.html.vue</scope>
+	<description>l-directives</description>
+</snippet>

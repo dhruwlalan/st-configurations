@@ -1,11 +1,11 @@
 
 <snippet>
 	<content><![CDATA[
-bind (el , binding , vnode) {
+unbind (el , binding , vnode) {
 	$0
 } ,
 ]]></content>
-	<tabTrigger></tabTrigger>
+	<tabTrigger>unbind</tabTrigger>
 	<scope>text.html.vue source.js</scope>
-	<description>bind()</description>
+	<description>d-unbind()</description>
 </snippet>

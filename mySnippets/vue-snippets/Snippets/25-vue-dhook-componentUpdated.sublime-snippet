@@ -1,0 +1,11 @@
+
+<snippet>
+	<content><![CDATA[
+componentUpdated (el , binding , vnode , oldVnode) {
+	$0
+} ,
+]]></content>
+	<tabTrigger>componentUpdated</tabTrigger>
+	<scope>text.html.vue source.js</scope>
+	<description>d-componentUpdated()</description>
+</snippet>

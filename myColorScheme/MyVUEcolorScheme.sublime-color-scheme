@@ -232,11 +232,17 @@
                 "name": "Vue Attribute Binding JS",
                 "scope": "meta.tag source.js.embedded.vue punctuation.section.block",
                 "foreground": "mediumspringgreen",
-                "font_style": ""
+                "font_style": "bold"
             },
             {
                 "name": "Vue Attribute Binding JS Label",
                 "scope": "source.js.embedded.vue entity.name.label.js",
+                "foreground": "#ff9999",
+                "font_style": "bold"
+            },
+            {
+                "name": "Vue Attribute Binding JS Label Others",
+                "scope": "source.js.embedded.vue meta.block.js variable.other.readwrite.js",
                 "foreground": "#ff9999",
                 "font_style": "bold"
             },
@@ -506,6 +512,18 @@
                 "name": "Built-in Class",
                 "scope": "meta.function-call.method.js support.constant.builtin.js",
                 "foreground": "#F1FF7B",
+                "font_style": "bold"
+            },
+            {
+                "name": "Support Class Import",
+                "scope": "source.js meta.import.js variable.other.readwrite.js",
+                "foreground": "#F1FF7B",
+                "font_style": "bold"
+            },
+            {
+                "name": "Support Class Import Punctuation",
+                "scope": "meta.import.js meta.block.js punctuation.section.block , meta.import.js meta.block.js punctuation.separator.comma.js",
+                "foreground": "white",
                 "font_style": "bold"
             },
 

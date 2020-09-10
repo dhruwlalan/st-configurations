@@ -1,5 +1,8 @@
  {
     "scope": "text.html.vue",
     "completions": [
+    	{ "trigger": "binding.value", "contents": "binding.value" },
+    	{ "trigger": "binding.arg", "contents": "binding.arg" },
+    	{ "trigger": "binding.modifiers", "contents": "binding.modifiers['$1']" },
     ]
 }

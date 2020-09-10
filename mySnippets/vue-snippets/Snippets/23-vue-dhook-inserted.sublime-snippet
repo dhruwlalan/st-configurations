@@ -1,0 +1,11 @@
+
+<snippet>
+	<content><![CDATA[
+inserted (el , binding , vnode) {
+	$0
+} ,
+]]></content>
+	<tabTrigger>inserted</tabTrigger>
+	<scope>text.html.vue source.js</scope>
+	<description>d-inserted()</description>
+</snippet>
