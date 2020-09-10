@@ -1,0 +1,9 @@
+
+<snippet>
+	<content><![CDATA[
+this.\$emit('${1:event}' , ${2:data});$0
+]]></content>
+	<tabTrigger>emitd</tabTrigger>
+	<scope>text.html.vue source.js</scope>
+	<description>$emit(e,d)</description>
+</snippet>
