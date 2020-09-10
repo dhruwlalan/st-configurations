@@ -1,0 +1,9 @@
+
+<snippet>
+	<content><![CDATA[
+{{ $1 }}$0
+]]></content>
+	<tabTrigger>inj</tabTrigger>
+	<scope>text.html.vue</scope>
+	<description>interpollation</description>
+</snippet>

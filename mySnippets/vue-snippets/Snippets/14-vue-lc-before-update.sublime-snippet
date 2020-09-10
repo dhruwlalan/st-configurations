@@ -1,0 +1,11 @@
+
+<snippet>
+	<content><![CDATA[
+beforeUpdate () {
+	$0
+} ,
+]]></content>
+	<tabTrigger>beforeUpdate</tabTrigger>
+	<scope>text.html.vue source.js</scope>
+	<description>LC-Hook</description>
+</snippet>

@@ -1,0 +1,11 @@
+
+<snippet>
+	<content><![CDATA[
+updated () {
+	$0
+} ,
+]]></content>
+	<tabTrigger>updated</tabTrigger>
+	<scope>text.html.vue source.js</scope>
+	<description>LC-Hook</description>
+</snippet>

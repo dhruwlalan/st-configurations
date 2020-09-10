@@ -1,0 +1,11 @@
+
+<snippet>
+	<content><![CDATA[
+mounted () {
+	$0
+} ,
+]]></content>
+	<tabTrigger>mounted</tabTrigger>
+	<scope>text.html.vue source.js</scope>
+	<description>LC-Hook</description>
+</snippet>

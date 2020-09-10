@@ -1,0 +1,11 @@
+
+<snippet>
+	<content><![CDATA[
+watch: {
+	$0
+} ,
+]]></content>
+	<tabTrigger>watch</tabTrigger>
+	<scope>text.html.vue source.js</scope>
+	<description>watch:</description>
+</snippet>
