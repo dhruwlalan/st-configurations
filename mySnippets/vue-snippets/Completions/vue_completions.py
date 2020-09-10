@@ -392,17 +392,14 @@ class HtmlTagCompletions(sublime_plugin.EventListener):
         # got the tag, now find all attributes that match
         attributes = self.tag_to_attributes.get(tag, [])
         # ("class\tAttr", "class="$1">"),
-        for a in attributes:
-            if a is 'scoped':
-                continue
-            else:
-                attri_completions = [(a + '\tAttr', a + '="$1"' + suffix)]
 
         for a in attributes:
             if a is 'scoped':
-                attri_completions += [('scoped\tAttr', 'scoped' + suffix)]
+                attributes.remove(a)
 
-        attri_completions += [('on\t@', '@${1:event}="$2"' + suffix)]
+        attri_completions = [(a + '\tAttr', a + '="$1"' + suffix) for a in attributes]
+
+        attri_completions += [('on\tAttr', '@${1:event}="$2"' + suffix)]
         attri_completions += [('pass\tpass props', ':${1:prop}="$2"' + suffix)]
         attri_completions += [('v\tv-', 'v-${1:dir}="$2"' + suffix)]
         attri_completions += [('if\tv-if', 'v-if="$1"' + suffix)]
@@ -413,15 +410,14 @@ class HtmlTagCompletions(sublime_plugin.EventListener):
         attri_completions += [('modl\tv-model', 'v-model.lazy="$1"' + suffix)]
         attri_completions += [('modt\tv-model', 'v-model.trim="$1"' + suffix)]
         attri_completions += [('modn\tv-model', 'v-model.number="$1"' + suffix)]
+        attri_completions += [('scoped\tAttr', 'scoped' + suffix)]
 
         for a in attributes:
             if '@' in a:
                 continue
-            elif a is 'scoped':
-                continue
             else:
                 attri_completions += [('b' + a + '\tAttr', ':' + a + '="$1"' + suffix)]
-        
+
         return attri_completions
 
 
