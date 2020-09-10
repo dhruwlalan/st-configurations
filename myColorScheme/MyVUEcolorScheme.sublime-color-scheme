@@ -64,7 +64,7 @@
     },
     "rules":
     [
-        /*  COMMON                */
+        /** COMMON ****************/
         //  INVALID                 
             {
                 "name": "Invalid",
@@ -113,7 +113,7 @@
             {
                 "name": "HTML Generic Strings Content",
                 "scope": "meta.attribute-with-value string.quoted.double.html",
-                "foreground": "#FFEE58",
+                "foreground": "khaki",
                 "font_style": ""
             },
             {
@@ -137,7 +137,7 @@
             },
 
 
-        /*  HTML                  */
+        /** HTML ******************/
         //  TAGS                    
             {
                 "name": "VUE <template> Tag",
@@ -172,8 +172,8 @@
             {
                 "name": "Generic Tag Begin End",
                 "scope": "punctuation.definition.tag.begin.html , punctuation.definition.tag.end.html",
-                "foreground": "white",
-                "font_style": ""
+                "foreground": "deeppink",
+                "font_style": "bold"
             },
         //  ATTRIBUTE               
             {
@@ -185,13 +185,13 @@
             {
                 "name": "Generic Attribute Strings Begin End",
                 "scope": "meta.tag meta.attribute-with-value string.quoted.double punctuation.definition.string",
-                "foreground": "#FFEE58",
+                "foreground": "khaki",
                 "font_style": ""
             },
             {
                 "name": "General Attribute Key Value Separater",
                 "scope": "meta.attribute-with-value punctuation.separator , meta.tag meta.attribute-with-value punctuation.separator",
-                "foreground": "white",
+                "foreground": "cyan",
                 "font_style": ""
             },
             {
@@ -202,7 +202,7 @@
             },
             {
                 "name": "Vue Attribute Block Seperater & String Quotes",
-                "scope": "meta.tag.block.any.html punctuation.separator , meta.tag.block.any.html punctuation.definition.string",
+                "scope": "meta.tag.block punctuation.separator , meta.tag.block punctuation.definition.string",
                 "foreground": "mediumspringgreen",
                 "font_style": "bold"
             },
@@ -224,6 +224,7 @@
                 "foreground": "mediumspringgreen",
                 "font_style": "bold"
             },
+        //  VUE JS                  
             {
                 "name": "Vue Attribute Binding JS",
                 "scope": "meta.tag source.js.embedded.vue punctuation.section.block",
@@ -239,37 +240,35 @@
             {
                 "name": "Vue Attribute Binding JS Strings",
                 "scope": "source.js.embedded.vue string.quoted",
-                "foreground": "#FFEE58",
+                "foreground": "yellow",
                 "font_style": ""
             },
             {
                 "name": "Vue Attribute Binding JS Strings Quoted Begin End",
                 "scope": "source.js.embedded.vue punctuation.definition.string.begin.js , source.js.embedded.vue punctuation.definition.string.end.js",
-                "foreground": "#FFEE58",
+                "foreground": "yellow",
                 "font_style": ""
             },
-        //  FUNCTIONS               
-            {
-                "name": "Function Call JS",
-                "scope": "meta.function-call.js variable.function.js",
-                "foreground": "cyan",
-                "font_style": ""
-            },
-            {
-                "name": "Function Call JS Parenthesis Begin End",
-                "scope": "meta.function-call.js punctuation.section.group.begin.js , meta.function-call.js punctuation.section.group.end.js",
-                "foreground": "white",
-                "font_style": ""
-            },
-        //  VUE JS                  
             {
                 "name": "JS Embed Keyword",
                 "scope": "source.js.embedded.vue keyword.operator.js",
                 "foreground": "violet",
                 "font_style": "bold"
             },
+            {
+                "name": "Vue Attribute Binding JS Function Call",
+                "scope": "meta.function-call.js variable.function.js",
+                "foreground": "cyan",
+                "font_style": ""
+            },
+            {
+                "name": "Vue Attribute Binding JS Function Call Parenthesis Begin End",
+                "scope": "meta.function-call.js punctuation.section.group.begin.js , meta.function-call.js punctuation.section.group.end.js",
+                "foreground": "white",
+                "font_style": ""
+            },
 
-        /*  JS                    */
+        /** JS ********************/
         //  IDENTIFIERS             
             {
                 "name": "Variables",
@@ -507,7 +506,7 @@
                 "font_style": "bold"
             },
 
-        /*  SCSS                  */
+        /** SCSS ******************/
         //  SELECTOR                
             {
                 "name": "Tag Selector",
