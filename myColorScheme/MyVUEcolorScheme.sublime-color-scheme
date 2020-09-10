@@ -57,10 +57,13 @@
             "find_highlight_foreground": "black",
             "find_highlight": "white",
         //  BRACKETS                
-            "brackets_options":"foreground",
+            "brackets_options":"bold",
             "brackets_foreground":"yellow",
-            "bracket_contents_options":"foreground",
-            "bracket_contents_foreground":"yellow",
+            "bracket_contents_options":"bold",
+            "bracket_contents_foreground":"mediumspringgreen",
+        //  TAGS                    
+            "tags_options":"bold",
+            "tags_foreground":"yellow",
     },
     "rules":
     [
