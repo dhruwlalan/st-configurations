@@ -276,6 +276,12 @@
                 "foreground": "white",
                 "font_style": ""
             },
+            {
+                "name": "Vue Attribute Binding JS Operator Bitwise",
+                "scope": "source.js.embedded.vue source.js keyword.operator.bitwise.js",
+                "foreground": "var(operatorMedium)",
+                "font_style": "bold"
+            },
 
         /** JS ********************/
         //  IDENTIFIERS             

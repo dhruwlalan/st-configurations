@@ -1,0 +1,11 @@
+
+<snippet>
+	<content><![CDATA[
+Vue.mixin({
+	$0
+});
+]]></content>
+	<tabTrigger>gmixin</tabTrigger>
+	<scope>source.js</scope>
+	<description>Vue.mixin()</description>
+</snippet>

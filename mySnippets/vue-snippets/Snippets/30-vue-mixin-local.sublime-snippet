@@ -1,0 +1,11 @@
+
+<snippet>
+	<content><![CDATA[
+export const ${1:name} = {
+	$0
+}
+]]></content>
+	<tabTrigger>mixin</tabTrigger>
+	<scope>source.js</scope>
+	<description>l-mixin</description>
+</snippet>

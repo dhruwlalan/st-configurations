@@ -1,0 +1,9 @@
+
+<snippet>
+	<content><![CDATA[
+mixins: [${1:name}] ,
+]]></content>
+	<tabTrigger>mix</tabTrigger>
+	<scope>text.html.vue source.js</scope>
+	<description>mixins:[]</description>
+</snippet>

@@ -9,5 +9,5 @@ Vue.directive('${1:name}' , {
 ]]></content>
 	<tabTrigger>gdirective</tabTrigger>
 	<scope>source.js</scope>
-	<description>g-directive</description>
+	<description>Vue.directive()</description>
 </snippet>

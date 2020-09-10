@@ -1,0 +1,11 @@
+
+<snippet>
+	<content><![CDATA[
+Vue.filter('${1:name}' , (value) => {
+	$0
+})
+]]></content>
+	<tabTrigger>gfilter</tabTrigger>
+	<scope>source.js</scope>
+	<description>Vue.filter()</description>
+</snippet>
