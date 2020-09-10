@@ -7,5 +7,29 @@
         }
     },
     { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} },
-    { "keys": ["ctrl+j"], "command": "insert_snippet", "args": {"name": "Packages/User/Javascript/Snippets/js-template-string-expression.sublime-snippet"} },
+    { 
+    	"keys": ["ctrl+j"], 
+    	"command": "insert_snippet", 
+    	"args": {"name": "Packages/User/VUE/Snippets/02-vue-string-interpollation.sublime-snippet"},
+    	"context": [
+    		{ "key": "selector", "operator": "equal", "operand": "text.html.vue" }
+    	]
+    },
+    { 
+    	"keys": ["ctrl+j"], 
+    	"command": "insert_snippet", 
+    	"args": {"name": "Packages/User/JAVASCRIPT/Snippets/13-js-template-string-expression.sublime-snippet"},
+    	"context": [
+    		{ "key": "selector", "operator": "equal", "operand": "source.js" }
+    	]
+    },
+    { 
+    	"keys": ["ctrl+j"], 
+    	"command": "insert_snippet", 
+    	"args": {"name": "Packages/User/JAVASCRIPT/Snippets/13-js-template-string-expression.sublime-snippet"},
+    	"context": [
+    		{ "key": "selector", "operator": "equal", "operand": "text.html.vue" },
+    		{ "key": "selector", "operator": "equal", "operand": "source.js" }
+    	]
+    }
 ]
