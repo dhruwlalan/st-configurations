@@ -1,0 +1,11 @@
+
+<snippet>
+	<content><![CDATA[
+.${1:name} {
+	$0
+}
+]]></content>
+	<tabTrigger>id</tabTrigger>
+	<scope>source.scss</scope>
+	<description>#id {}</description>
+</snippet>

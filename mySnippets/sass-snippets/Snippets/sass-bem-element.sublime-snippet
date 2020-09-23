@@ -1,0 +1,11 @@
+
+<snippet>
+	<content><![CDATA[
+&__${1:name} {
+	$0
+}
+]]></content>
+	<tabTrigger>el</tabTrigger>
+	<scope>source.scss</scope>
+	<description>bem-element</description>
+</snippet>

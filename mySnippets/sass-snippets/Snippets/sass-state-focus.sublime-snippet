@@ -1,0 +1,11 @@
+
+<snippet>
+	<content><![CDATA[
+&:focus {
+	$0
+}
+]]></content>
+	<tabTrigger>focus</tabTrigger>
+	<scope>source.scss</scope>
+	<description>:focus</description>
+</snippet>

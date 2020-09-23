@@ -1,0 +1,11 @@
+
+<snippet>
+	<content><![CDATA[
+:root {
+	$0
+}
+]]></content>
+	<tabTrigger>root</tabTrigger>
+	<scope>source.scss</scope>
+	<description>:root</description>
+</snippet>

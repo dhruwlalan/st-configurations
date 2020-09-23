@@ -1,0 +1,11 @@
+
+<snippet>
+	<content><![CDATA[
+&:active {
+	$0
+}
+]]></content>
+	<tabTrigger>active</tabTrigger>
+	<scope>source.scss</scope>
+	<description>:active</description>
+</snippet>

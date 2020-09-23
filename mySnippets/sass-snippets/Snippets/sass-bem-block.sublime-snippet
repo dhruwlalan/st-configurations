@@ -1,0 +1,11 @@
+
+<snippet>
+	<content><![CDATA[
+.${1:name} {
+	$0
+}
+]]></content>
+	<tabTrigger>block</tabTrigger>
+	<scope>source.scss</scope>
+	<description>bem-block</description>
+</snippet>

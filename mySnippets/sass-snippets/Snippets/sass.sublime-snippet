@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+@use "../abstracts" as *;
+
+$0
+]]></content>
+	<tabTrigger>sass</tabTrigger>
+	<scope>source.scss</scope>
+	<description>sass</description>
+</snippet>

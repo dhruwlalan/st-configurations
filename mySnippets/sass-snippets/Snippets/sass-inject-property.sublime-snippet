@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+\$$1: ${2:null} , $0
+]]></content>
+	<tabTrigger>pp</tabTrigger>
+	<scope>source.scss</scope>
+	<description>$: null</description>
+</snippet>

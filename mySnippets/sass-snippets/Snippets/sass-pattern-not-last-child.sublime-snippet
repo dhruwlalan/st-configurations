@@ -1,0 +1,11 @@
+
+<snippet>
+	<content><![CDATA[
+&:not(:last-child) {
+	$0
+}
+]]></content>
+	<tabTrigger>notlast</tabTrigger>
+	<scope>source.scss</scope>
+	<description>not-last</description>
+</snippet>
