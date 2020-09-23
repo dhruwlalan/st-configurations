@@ -1,0 +1,15 @@
+{
+    "scope": "source.js",
+    "completions": [
+        { "trigger": "toExponential", "contents": "toExponential(${1:decimals});$0" },
+        { "trigger": "toFixed", "contents": "toFixed(${1:decimals});$0" },
+        { "trigger": "valueOf", "contents": "valueOf();$0" },
+        { "trigger": "Number", "contents": "Number($1);$0" },
+        { "trigger": "parseInt", "contents": "parseInt('$1');$0" },
+        { "trigger": "parseFloat", "contents": "parseFloat('$1');$0" },
+        "MAX_VALUE",
+        "MIN_VALUE",
+        "POSITIVE_INFINITY",
+        "NEGATIVE_INFINITY",
+    ]
+}

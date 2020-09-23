@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+every((${1:item}) => {
+	${0:return;}
+});
+]]></content>
+	<tabTrigger>every</tabTrigger>
+	<scope>source.js</scope>
+	<description>Iter</description>
+</snippet>

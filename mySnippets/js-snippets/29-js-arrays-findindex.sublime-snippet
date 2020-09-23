@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+findIndex((${1:item}) => {
+	${0:return;}
+});
+]]></content>
+	<tabTrigger>findindex</tabTrigger>
+	<scope>source.js</scope>
+	<description>Iter</description>
+</snippet>

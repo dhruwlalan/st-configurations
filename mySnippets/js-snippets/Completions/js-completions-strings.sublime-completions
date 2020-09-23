@@ -1,0 +1,16 @@
+{
+    "scope": "source.js",
+    "completions": [
+        { "trigger": "indexOf", "contents": "indexOf('$1');$0" },
+        { "trigger": "lastIndexOf", "contents": "lastIndexOf('$1');$0" },
+        { "trigger": "substring", "contents": "substring(${1:start} , ${2:end});$0" },
+        { "trigger": "substr", "contents": "substr(${1:start} , ${2:length});$0" },
+        { "trigger": "replace", "contents": "replace('${1:whom}' , '${2:to}');$0" },
+        { "trigger": "toUpperCase", "contents": "toUpperCase();$0" },
+        { "trigger": "toLowerCase", "contents": "toLowerCase();$0" },
+        { "trigger": "trim", "contents": "trim();$0" },
+        { "trigger": "charAt", "contents": "charAt(${1:index});$0" },
+        { "trigger": "charCodeAt", "contents": "charCodeAt(${1:index});$0" },
+        { "trigger": "split", "contents": "split('${1:delimiter}');$0" },
+    ]
+}

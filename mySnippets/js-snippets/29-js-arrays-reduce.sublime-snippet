@@ -1,0 +1,11 @@
+
+<snippet>
+	<content><![CDATA[
+reduce((${1:total} , ${2:item}) => {
+	${0:return;}
+} , ${3:initialValue});
+]]></content>
+	<tabTrigger>reduce</tabTrigger>
+	<scope>source.js</scope>
+	<description>Iter</description>
+</snippet>

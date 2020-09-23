@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+some((${1:item}) => {
+	${0:return;}
+});
+]]></content>
+	<tabTrigger>some</tabTrigger>
+	<scope>source.js</scope>
+	<description>Iter</description>
+</snippet>

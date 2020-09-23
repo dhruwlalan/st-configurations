@@ -1,0 +1,12 @@
+{
+    "scope": "source.js",
+    "completions": [
+        { "trigger": "push", "contents": "push($1);$0" },
+        { "trigger": "pop", "contents": "pop();$0" },
+        { "trigger": "unshift", "contents": "unshift($1);$0" },
+        { "trigger": "shift", "contents": "shift();$0" },
+        { "trigger": "splice", "contents": "splice(${1:index} , ${2:count} , ${3:add-el});$0" },
+        { "trigger": "slice", "contents": "slice(${1:startIndex} , ${2:uptoIndex});$0" },
+    	{ "trigger": "concat", "contents": "concat(${1:arrayToConcat});$0" },
+    ]
+}
