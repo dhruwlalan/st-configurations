@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+setTimeout(() => {
+	$0
+} , $1 );
+]]></content>
+	<tabTrigger>settimeout</tabTrigger>
+	<scope>source.js</scope>
+	<description>()</description>
+</snippet>

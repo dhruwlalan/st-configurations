@@ -19,7 +19,7 @@
             { "trigger": "bg1", "contents": "@include bg( \\$$1: ${2:null} , $3);$0" },
             { "trigger": "bg2", "contents": "@include bg( \\$$1: ${2:null} , \\$$3: ${4:null} , $5);$0" },
         // TYPO ~ TYPOGRAPHY                    
-            { "trigger": "typo", "contents": "@include typo( \\$c: ${1:null} , \\$ff: ${2:null} , \\$fs: ${3:null} , \\$fs: ${4:null} , $5);$0" },
+            { "trigger": "typo", "contents": "@include typo( \\$c: ${1:null} , \\$ff: ${2:null} , \\$fs: ${3:null} , \\$fw: ${4:null} , $5);$0" },
             { "trigger": "typoc", "contents": "@include typo( \\$c: ${1:null} , $2);$0" },
             { "trigger": "typoff", "contents": "@include typo( \\$ff: ${1:null} , $2);$0" },
             { "trigger": "typofs", "contents": "@include typo( \\$fs: ${1:null} , $2);$0" },
