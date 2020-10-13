@@ -1,6 +1,6 @@
 
 {
-    "name": "My JS Color Scheme",
+    "name": "My <name> Color Scheme",
     "author": "dhruw lalan",
     "variables":
     {
@@ -49,10 +49,13 @@
             "find_highlight_foreground": "black",
             "find_highlight": "white",
         //  BRACKETS                
-            "brackets_options":"foreground",
+            "brackets_options":"bold",
             "brackets_foreground":"yellow",
-            "bracket_contents_options":"foreground",
-            "bracket_contents_foreground":"yellow",
+            "bracket_contents_options":"bold",
+            "bracket_contents_foreground":"mediumspringgreen",
+        //  TAGS                    
+            "tags_options":"bold",
+            "tags_foreground":"yellow",
     },
     "rules":
     [
@@ -81,19 +84,6 @@
                 "foreground": "var(comment)",
                 "font_style": "bold"
             },
-        //  VARIABLES               
-            {
-                "name": "Variable Defining Keywords",
-                "scope": "storage.type.js",
-                "foreground": "var(keyword)",
-                "font_style": "bold"
-            }, 
-            {
-                "name": "Identifiers",
-                "scope": "variable.other.readwrite.js",
-                "foreground": "var(white)",
-                "font_style": ""
-            },
         //  STRINGS                 
             {
                 "name": "String Content",
@@ -120,36 +110,18 @@
                 "foreground": "var(white)",
                 "font_style": ""
             },
-        //  CONSTANTS               
+        //  KEYWORDS                
             {
-                "name": "Generic Constants",
-                "scope": "constant",
-                "foreground": "var(constant)",
+                "name": "Storage Types",
+                "scope": "source.js.webpack storage.type.js",
+                "foreground": "var(keyword)",
                 "font_style": "bold"
             },
-            {
-                "name": "Support Constants",
-                "scope": "support.constant.builtin.js",
-                "foreground": "var(constant)",
-                "font_style": "bold"
-            },
-            {
-                "name": "Numeric Constants",
-                "scope": "constant.numeric",
-                "foreground": "var(constant)",
-                "font_style": ""
-            },
-            {
-                "name": "Boolean Constants",
-                "scope": "constant.language.boolean.true.js",
-                "foreground": "var(constant)",
-                "font_style": "bold"
-            },         
         //  OPERATORS               
             {
                 "name": "Comma Operator",
                 "scope": "punctuation.separator.comma.js",
-                "foreground": "var(white)",
+                "foreground": "var(operatorLight)",
                 "font_style": ""
             },
             {
@@ -206,177 +178,98 @@
                 "foreground": "var(white)",
                 "font_style": ""
             },
-        //  STATEMENT TERMINATOR    
+        //  CONSTANTS               
             {
-                "name": "Statement Terminator",
-                "scope": "punctuation.terminator.statement.js",
-                "foreground": "var(white)",
-                "font_style": ""
-            },
-        //  CONDITIONALS            
-            {
-                "name": "Conditional Keywords",
-                "scope": "keyword.control",
-                "foreground": "var(keyword)",
+                "name": "Language Constants",
+                "scope": "source.js.webpack constant.language",
+                "foreground": "var(constant)",
                 "font_style": "bold"
             },
-        //  FUNCTIONS & METHODS     
+        //  NODE                    
             {
-                "name": "Function Keyword",
-                "scope": "storage.type.function.js",
-                "foreground": "var(keyword)",
-                "font_style": "bold"
-            },
-            {
-                "name": "Function Name",
-                "scope": "entity.name.function.js",
+                "name": "Node Support Functions",
+                "scope": "support.function.node.js",
                 "foreground": "var(function)",
                 "font_style": ""
             },
             {
-                "name": "Arrow Function",
-                "scope": "storage.type.function.arrow.js",
-                "foreground": "var(function)",
+                "name": "Destructuring Braces",
+                "scope": "source.js.webpack meta.binding.destructuring.mapping.js punctuation.section.block",
+                "foreground": "var(operatorMedium)",
+                "font_style": ""
+            },
+            {
+                "name": "Node Keywords",
+                "scope": "source.js.webpack support.constant.node.js",
+                "foreground": "hotpink",
                 "font_style": "bold"
-            },
-            {
-                "name": "Built-in Function",
-                "scope": "support.function.js, support.function.builtin.js",
-                "foreground": "var(function)",
-                "font_style": ""
-            },
-            {
-                "name": "Methods",
-                "scope": "variable.function.js",
-                "foreground": "var(function)",
-                "font_style": ""
-            },
-            {
-                "name": "Support Methods",
-                "scope": "support.function.console.js",
-                "foreground": "var(function)",
-                "font_style": ""
-            },
-            {
-                "name": "Function Parameters",
-                "scope": "variable.parameter.function.js",
-                "foreground": "var(functionIO)",
-                "font_style": "bold"
-            },
-            {
-                "name": "Return Statement",
-                "scope": "keyword.control.flow.js",
-                "foreground": "var(functionIO)",
-                "font_style": "bold"
-            },
-            {
-                "name": "Function Parameter Seperator",
-                "scope": "punctuation.separator.parameter.function.js",
-                "foreground": "var(operator)",
-                "font_style": ""
             },
         //  OBJECTS                 
             {
                 "name": "Object Properties",
-                "scope": "meta.object-literal.key.js",
+                "scope": "source.js.webpack meta.object-literal.js meta.object-literal.key.js",
+                "foreground": "#ff7c7c",
+                "font_style": "bold"
+            },
+            {
+                "name": "Object Properties Nested",
+                "scope": "source.js.webpack meta.object-literal.js meta.object-literal.js meta.object-literal.key.js",
                 "foreground": "var(objectProperty)",
                 "font_style": "bold"
             },
+        //  FUNCTIONS               
             {
-                "name": "Object Properties Used",
-                "scope": "meta.property.object.js",
-                "foreground": "var(objectProperty)",
-                "font_style": "bold"
-            },
-            {
-                "name": "Key Value Separator",
-                "scope": "punctuation.separator.key-value.js",
-                "foreground": "var(operator1)",
-                "font_style": "bold"
-            },
-            {
-                "name": "Supporting Object",
-                "scope": "support.type.object",
-                "foreground": "var(domObject)",
-                "font_style": "italic bold"
-            },
-            {
-                "name": "This Keyword",
-                "scope": "variable.language.this.js",
-                "foreground": "var(this)",
-                "font_style": "bold"
-            },
-        //  CLASS                   
-            {
-                "name": "Class Keyword",
-                "scope": "storage.type.class.js",
-                "foreground": "var(keyword)",
-                "font_style": "bold"
-            },
-            {
-                "name": "Class Name",
-                "scope": "entity.name.class.js",
-                "foreground": "var(class)",
-                "font_style": "bold"
-            },
-            {
-                "name": "Class Constructor Name",
-                "scope": "entity.name.function.constructor.js",
+                "name": "Methods",
+                "scope": "source.js.webpack meta.function-call.method.js variable.function.js",
                 "foreground": "var(function)",
+                "font_style": ""
+            },
+            {
+                "name": "Function Constructors Calls",
+                "scope": "source.js.webpack meta.function-call.constructor.js",
+                "foreground": "var(function)",
+                "font_style": ""
+            },
+        //  REGEX                   
+            {
+                "name": "Regex Start End",
+                "scope": "string.regexp.js punctuation.definition.string.begin.js | string.regexp.js punctuation.definition.string.end.js",
+                "foreground": "var(string)",
                 "font_style": "bold"
             },
             {
-                "name": "Class Constructor Call",
-                "scope": "meta.function-call.constructor.js",
-                "foreground": "var(class)",
+                "name": "Regex Escape",
+                "scope": "string.regexp.js constant.character.escape.backslash.regexp",
+                "foreground": "var(constant)",
                 "font_style": "bold"
             },
             {
-                "name": "Getters and Setters",
-                "scope": "storage.type.accessor.js",
+                "name": "Regex String",
+                "scope": "string.regexp.js",
+                "foreground": "khaki",
+                "font_style": "bold"
+            },
+            {
+                "name": "Regex Anchor",
+                "scope": "string.regexp.js keyword.control.anchor.regexp",
+                "foreground": "deeppink",
+                "font_style": "bold"
+            },
+            {
+                "name": "Regex Operator OR",
+                "scope": "string.regexp.js keyword.operator.or.regexp",
                 "foreground": "var(keyword)",
                 "font_style": "bold"
             },
             {
-                "name": "Built-in Class",
-                "scope": "support.class.builtin.js",
-                "foreground": "var(class)",
+                "name": "Regex Group Parenthesis",
+                "scope": "string.regexp.js meta.group.regexp punctuation.definition.group",
+                "foreground": "var(functionIO)",
                 "font_style": "bold"
             },
             {
-                "name": "Support Class",
-                "scope": "support.class.js",
-                "foreground": "#F1FF7B",
-                "font_style": "bold"
-            },
-            {
-                "name": "Support Class Import",
-                "scope": "source.js meta.import.js variable.other.readwrite.js",
-                "foreground": "#F1FF7B",
-                "font_style": "bold"
-            },
-            {
-                "name": "Support Class Import Punctuation",
-                "scope": "meta.import.js meta.block.js punctuation.section.block , meta.import.js meta.block.js punctuation.separator.comma.js",
-                "foreground": "white",
-                "font_style": "bold"
-            },
-            {
-                "name": "Class Extends Keyword",
-                "scope": "meta.class.js storage.modifier.extends.js",
-                "foreground": "var(keyword)",
-                "font_style": "bold"
-            },
-            {
-                "name": "Inherited Class",
-                "scope": "source.js meta.class.js",
-                "foreground": "#F1FF7B",
-                "font_style": "bold"
-            },
-        //  TRY CATCH               
-            {
-                "name": "Throw Keyword",
-                "scope": "keyword.control.trycatch.js",
+                "name": "Regex Character Class Begin End",
+                "scope": "string.regexp.js punctuation.definition.character-class.begin.regexp | string.regexp.js punctuation.definition.character-class.end.regexp",
                 "foreground": "var(functionIO)",
                 "font_style": "bold"
             },

@@ -160,9 +160,15 @@
                 "foreground": "mediumspringgreen",
                 "font_style": "bold"
             },
-             {
+            {
                 "name": "Custom Tag",
                 "scope": "meta.tag.custom.html entity.name.tag.custom.html , meta.tag.custom.html punctuation.definition.tag.end.html , meta.tag.custom.html punctuation.definition.tag.begin.html",
+                "foreground": "hotpink",
+                "font_style": "bold"
+            },
+            {
+                "name": "Other Tag",
+                "scope": "meta.tag.other.html entity.name.tag.other.html , meta.tag.other.html punctuation.definition.tag.begin.html , meta.tag.other.html punctuation.definition.tag.end.html",
                 "foreground": "hotpink",
                 "font_style": "bold"
             },
@@ -222,6 +228,18 @@
                 "font_style": "bold"
             },
             {
+                "name": "Vue Attribute Other Tag",
+                "scope": "meta.tag.other.html entity.other.attribute-name.html",
+                "foreground": "mediumspringgreen",
+                "font_style": "bold"
+            },
+            {
+                "name": "Vue Attribute Other Seperater & String Quotes",
+                "scope": "meta.tag.other.html punctuation.definition , meta.tag.other.html punctuation.separator",
+                "foreground": "mediumspringgreen",
+                "font_style": "bold"
+            },
+            {
                 "name": "Vue Interpolation Begin End",
                 "scope": "punctuation.definition.template",
                 "foreground": "mediumspringgreen",
@@ -253,6 +271,19 @@
                 "font_style": ""
             },
             {
+                "name": "Vue Attribute Binding JS Template Strings",
+                "scope": "source.js.embedded.vue source.js string.template.js",
+                "foreground": "yellow",
+                "font_style": ""
+            },
+            {
+                "name": "Vue Attribute Binding JS Template Strings Expressions",
+                "scope": "meta.template.expression.js punctuation.definition",
+                "background": "rgba(124, 124, 124, 0.2)",
+                "foreground": "rgba(124, 124, 124, 0.2)",
+                "font_style": "bold"
+            },
+            {
                 "name": "Vue Attribute Binding JS Strings Quoted Begin End",
                 "scope": "source.js.embedded.vue punctuation.definition.string.begin.js , source.js.embedded.vue punctuation.definition.string.end.js",
                 "foreground": "yellow",
@@ -261,7 +292,7 @@
             {
                 "name": "JS Embed Keyword",
                 "scope": "source.js.embedded.vue keyword.operator.js",
-                "foreground": "violet",
+                "foreground": "deeppink",
                 "font_style": "bold"
             },
             {
@@ -326,6 +357,12 @@
                 "name": "This Keyword",
                 "scope": "variable.language.this.js",
                 "foreground": "khaki",
+                "font_style": "bold"
+            },
+            {
+                "name": "In Keyword",
+                "scope": "source.js keyword.operator.word.js",
+                "foreground": "deeppink",
                 "font_style": "bold"
             },
         //  CONSTANTS               
@@ -408,7 +445,7 @@
                 "scope": "keyword.operator.ternary.js",
                 "foreground": "var(operatorDark)",
                 "font_style": "bold"
-            },         
+            },
         //  FUNCTIONS & METHODS     
             {
                 "name": "Function Decleration",
@@ -478,6 +515,12 @@
                 "font_style": "bold"
             },
             {
+                "name": "Object Label",
+                "scope": "source.js entity.name.label.js",
+                "foreground": "#ff9999",
+                "font_style": "bold"
+            },
+            {
                 "name": "Object Key Value Separator",
                 "scope": "punctuation.separator.key-value.js",
                 "foreground": "var(operator1)",
@@ -488,6 +531,12 @@
                 "scope": "support.type.object",
                 "foreground": "mediumspringgreen",
                 "font_style": "italic bold"
+            },
+            {
+                "name": "Dolor Object",
+                "scope": "source.js meta.property.object.dollar.js",
+                "foreground": "var(propertySkin)",
+                "font_style": "bold"
             },
         //  CLASS                   
             {
