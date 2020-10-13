@@ -1,0 +1,119 @@
+
+{
+    "name": "My <name> Color Scheme",
+    "author": "dhruw lalan",
+    "variables":
+    {
+        // colors Used              
+            "white":                "white",
+            "cyan":                 "cyan",
+            "springgreen":          "springgreen",
+            "mediumspringgreen":    "mediumspringgreen",
+            "deeppink":             "deeppink",
+            "hotpink":              "hotpink",
+            "orange":               "orange",
+            "tomato":               "tomato",
+            "violet":               "violet",
+            "khaki":                "khaki",
+            "palegoldenrod":        "palegoldenrod",
+            "commentGray":          "#808080",
+            "invalidRed":           "#FF1E00",
+            "htmlString":           "#FFEE58",
+            "classyYellow":         "#F1FF7B",
+            "propertyYellow":       "#FFF969",
+            "dullYellow":           "#9F9C42",
+            "propertySkin":         "#ff9999",
+            "constantBlue":         "#9E6AFF",
+        //  variables               
+            "operatorLight":    "palegoldenrod",
+            "operatorMedium":   "khaki",
+            "operatorDark":     "yellow",
+    },
+    "globals":
+    {
+        //  EDITOR                  
+            "background": "#191919",
+            "foreground": "white",
+            "caret": "white",
+            "invisibles": "white",
+            "line_highlight": "#212121",
+        //  ACCENTS                 
+            "fold_marker": "yellow",
+            "minimap_border": "cyan",
+            "accent": "cyan",
+        //  GUTTER                  
+            "gutter": "#191919",
+            "gutter_foreground": "#00c9c9",
+        //  SELECTION               
+            "selection": "#202020",
+            "inactive_selection": "#222222",
+            "selection_border": "#00bbff",
+            "selection_corner_style":"cut",
+        //  GUIDES                  
+            "guide": "#6F6F6F",
+            "active_guide": "cyan",
+            "stack_guide": "#06FF05",
+        //  FIND                    
+            "find_highlight_foreground": "black",
+            "find_highlight": "white",
+        //  BRACKETS                
+            "brackets_options":"bold",
+            "brackets_foreground":"yellow",
+            "bracket_contents_options":"bold",
+            "bracket_contents_foreground":"mediumspringgreen",
+        //  TAGS                    
+            "tags_options":"bold",
+            "tags_foreground":"yellow",
+    },
+    "rules":
+    [             
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "foreground": "#FFFFFF",
+            "background": "#FF1E00"
+        },
+        {
+            "name": "Single Line Comment",
+            "scope": "source.json comment.line.double-slash.js",
+            "foreground": "var(commentGray)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Multi line Comment",
+            "scope": "source.json comment.block.json",
+            "foreground": "var(commentGray)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Key",
+            "scope": "source.json meta.sequence.json meta.mapping.key.json string.quoted.double.json",
+            "foreground": "var(propertySkin)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Key Value Seperator",
+            "scope": "source.json meta.sequence.json meta.mapping.json punctuation.separator.mapping.key-value.json",
+            "foreground": "var(white)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Seperate Comma",
+            "scope": "source.json meta.sequence.json punctuation.separator.sequence.json",
+            "foreground": "var(operatorLight)",
+            "font_style": ""
+        },
+        {
+            "name": "Value String",
+            "scope": "source.json meta.sequence.json meta.mapping.value.json string.quoted.double.json",
+            "foreground": "var(mediumspringgreen)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Value Constants",
+            "scope": "source.json constant",
+            "foreground": "var(violet)",
+            "font_style": "bold"
+        },
+    ]
+}
