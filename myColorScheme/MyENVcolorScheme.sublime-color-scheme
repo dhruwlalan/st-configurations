@@ -38,7 +38,7 @@
             "tags_foreground":"yellow",
     },
     "rules":
-    [             
+    [
         {
             "name": "Invalid",
             "scope": "invalid",
@@ -47,25 +47,25 @@
         },
         {
             "name": "Comments",
-            "scope": "source.makefile comment.line.number-sign.makefile",
+            "scope": "text.plain.nodejs comment.line.number-sign.env",
             "foreground": "#808080",
             "font_style": ""
         },
         {
             "name": "Variable",
-            "scope": "source.makefile variable.other.makefile",
+            "scope": "text.plain.nodejs variable.other.env",
             "foreground": "white",
             "font_style": ""
         },
         {
             "name": "Equal Operator",
-            "scope": "source.makefile keyword.operator.assignment.makefile",
+            "scope": "text.plain.nodejs keyword.operator.assignment.env",
             "foreground": "deeppink",
             "font_style": "bold"
         },
         {
             "name": "Unquoted String",
-            "scope": "source.makefile string.unquoted.makefile",
+            "scope": "text.plain.nodejs string.unquoted.env",
             "foreground": "mediumspringgreen",
             "font_style": ""
         },
