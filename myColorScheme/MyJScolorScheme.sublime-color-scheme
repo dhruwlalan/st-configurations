@@ -68,7 +68,7 @@
                 "name": "Single Line Comment Content",
                 "scope": "comment.line.double-slash.js",
                 "foreground": "var(comment)",
-                "font_style": "italic"
+                "font_style": ""
             },            {
                 "name": "Single Line Comment Double Slash",
                 "scope": "punctuation.definition.comment.js",
@@ -117,6 +117,12 @@
             {
                 "name": "Template String Dot",
                 "scope": "punctuation.accessor.js",
+                "foreground": "var(white)",
+                "font_style": ""
+            },
+            {
+                "name": "Template String Variables",
+                "scope": "meta.template.expression.js source.js.embedded.expression variable.other.constant.js",
                 "foreground": "var(white)",
                 "font_style": ""
             },
@@ -197,6 +203,12 @@
             {
                 "name": "New Operator",
                 "scope": "keyword.operator.word.new.js",
+                "foreground": "var(keyword)",
+                "font_style": "bold"
+            },
+            {
+                "name": "General Operators",
+                "scope": "keyword.operator.js",
                 "foreground": "var(keyword)",
                 "font_style": "bold"
             },
@@ -377,6 +389,68 @@
             {
                 "name": "Throw Keyword",
                 "scope": "keyword.control.trycatch.js",
+                "foreground": "var(functionIO)",
+                "font_style": "bold"
+            },
+        //  NODE                    
+            {
+                "name": "Node Support Functions",
+                "scope": "support.function.node.js",
+                "foreground": "var(function)",
+                "font_style": ""
+            },
+            {
+                "name": "Destructuring Braces",
+                "scope": "source.js.webpack meta.binding.destructuring.mapping.js punctuation.section.block",
+                "foreground": "var(operatorMedium)",
+                "font_style": ""
+            },
+            {
+                "name": "Node Keywords",
+                "scope": "support.constant.node.js",
+                "foreground": "hotpink",
+                "font_style": "bold"
+            },
+        //  REGEX                   
+            {
+                "name": "Regex Start End",
+                "scope": "string.regexp.js punctuation.definition.string.begin.js | string.regexp.js punctuation.definition.string.end.js",
+                "foreground": "var(string)",
+                "font_style": "bold"
+            },
+            {
+                "name": "Regex Escape",
+                "scope": "string.regexp.js constant.character.escape.backslash.regexp",
+                "foreground": "var(constant)",
+                "font_style": "bold"
+            },
+            {
+                "name": "Regex String",
+                "scope": "string.regexp.js",
+                "foreground": "khaki",
+                "font_style": "bold"
+            },
+            {
+                "name": "Regex Anchor",
+                "scope": "string.regexp.js keyword.control.anchor.regexp",
+                "foreground": "deeppink",
+                "font_style": "bold"
+            },
+            {
+                "name": "Regex Operator OR",
+                "scope": "string.regexp.js keyword.operator.or.regexp",
+                "foreground": "var(keyword)",
+                "font_style": "bold"
+            },
+            {
+                "name": "Regex Group Parenthesis",
+                "scope": "string.regexp.js meta.group.regexp punctuation.definition.group",
+                "foreground": "var(functionIO)",
+                "font_style": "bold"
+            },
+            {
+                "name": "Regex Character Class Begin End",
+                "scope": "string.regexp.js punctuation.definition.character-class.begin.regexp | string.regexp.js punctuation.definition.character-class.end.regexp",
                 "foreground": "var(functionIO)",
                 "font_style": "bold"
             },
